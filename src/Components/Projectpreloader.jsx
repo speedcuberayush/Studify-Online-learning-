@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/ProjectPreloader.css";
 
-function ProjectPreloader({ name }) {
+function ProjectPreloader() {
   return (
     <div className="projectPreloader">
       <div className="box">

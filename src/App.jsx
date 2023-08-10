@@ -5,9 +5,9 @@ import Landingpage from "./Components/Landingpage.jsx";
 function App() {
   return (
     <div className="app">
-      <ProjectPreloader name={"STUDIFY"} />
+      {/* <ProjectPreloader /> */}
       {/* <Landingpage /> */}
-      {/* <PageTransition /> */}
+      <PageTransition />
     </div>
   );
 }
