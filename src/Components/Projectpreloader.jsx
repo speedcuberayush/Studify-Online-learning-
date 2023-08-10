@@ -8,7 +8,7 @@ function ProjectPreloader({ name }) {
         <div className="title">
           <span className="block"></span>
           <h1>
-            {name}
+            <h1 className="logo">Stud</h1>ify
             <span></span>
           </h1>
         </div>

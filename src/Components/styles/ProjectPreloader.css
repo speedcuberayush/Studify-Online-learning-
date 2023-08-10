@@ -190,3 +190,8 @@
     bottom: 0px;
   }
 }
+
+.logo {
+  color: #0091ff !important;
+  display: inline;
+}
