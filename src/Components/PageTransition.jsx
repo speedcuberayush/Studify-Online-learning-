@@ -3,19 +3,21 @@ import React from "react";
 
 const PageTransition = () => {
   return (
-    <div class="scene">
-      <div class="shadow"></div>
-      <div class="jumper">
-        <div class="spinner">
-          <div class="scaler">
-            <div class="loader">
-              <div class="cuboid">
-                <div class="cuboid__side"></div>
-                <div class="cuboid__side"></div>
-                <div class="cuboid__side"></div>
-                <div class="cuboid__side"></div>
-                <div class="cuboid__side"></div>
-                <div class="cuboid__side"></div>
+    <div className="pagetransition">
+      <div className="scene">
+        <div className="shadow" />
+        <div className="jumper">
+          <div className="spinner">
+            <div className="scaler">
+              <div className="loader">
+                <div className="cuboid">
+                  <div className="cuboid__side" />
+                  <div className="cuboid__side" />
+                  <div className="cuboid__side" />
+                  <div className="cuboid__side" />
+                  <div className="cuboid__side" />
+                  <div className="cuboid__side" />
+                </div>
               </div>
             </div>
           </div>

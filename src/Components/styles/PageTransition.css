@@ -5,7 +5,7 @@
   transform-style: preserve-3d;
 }
 
-body {
+.pagetransition {
   display: grid;
   place-items: center;
   min-height: 100vh;
@@ -30,7 +30,7 @@ body {
     rotateY(calc(var(--rotation-x, 0) * 1deg)) rotateX(0deg);
 }
 
-body {
+.pagetransition {
   transform-origin: 50% 50%;
   animation: scale var(--timeline) var(--delay) infinite linear;
 }
