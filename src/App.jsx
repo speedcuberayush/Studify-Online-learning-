@@ -6,9 +6,9 @@ import Error404 from "./Components/Error404.jsx";
 function App() {
   return (
     <div className="app">
-      {/* <ProjectPreloader /> */}
+      <ProjectPreloader />
       {/* <Landingpage /> */}
-      {/* <PageTransition /> */}
+      <PageTransition />
       <Error404 />
     </div>
   );
