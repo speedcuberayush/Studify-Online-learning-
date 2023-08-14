@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./Components/Logo.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import PageTransition from "./Components/PageTransition.jsx";
 import Landingpage from "./Components/Landingpage.jsx";
@@ -7,8 +8,9 @@ function App() {
   return (
     <div className="app">
       {/* <ProjectPreloader /> */}
+      {/* <PageTransition/> */}
+      {/* <Logo /> */}
       <Landingpage />
-      {/* <PageTransition /> */}
       {/* <Error404 /> */}
     </div>
   );

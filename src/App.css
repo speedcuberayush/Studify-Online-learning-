@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One&family=Concert+One&display=swap");
+
+@font-face {
+  font-family: Hey-August;
+  src: url("./Components/hey_august/Hey\ August.ttf");
+}
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Hey-August";
+  font-size: 100px;
+}
+
+.logo-1 {
+  color: #0096ff;
+}
+.logo-2 {
+  color: #fff;
+}
