@@ -65,6 +65,7 @@ a.social {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+  cursor: pointer;
 }
 
 .Authbtn:active {
@@ -235,4 +236,21 @@ form {
   margin: 0 5px;
   height: 40px;
   width: 40px;
+}
+
+.instagram:hover {
+  background-color: #c13584;
+  color: #fff;
+}
+.linkedin:hover {
+  background-color: #0096ff;
+  color: #fff;
+}
+.github:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+.google:hover {
+  background-color: #0f9d58;
+  color: #fff;
 }
