@@ -28,10 +28,31 @@ export default function Landing() {
       </div>
       <div className="part2">
         {/* typing text effects */}
-        <p style={{ fontSize: "50px", color: "#0096ff" }}>WELCOME TO STUDIFY</p>
+        <div className="mainAnimator">
+          <h1 className="headingClasswlaa">
+            <span className="maintxt">Your Learning Adventure Begins:</span>{" "}
+            <div className="roller">
+              <span id="rolltext">
+                Unleash Your Potential with Knowledge
+                <br />
+                Innovation and Growth Await
+                <br />
+                Charting a Path to Success
+                <br />
+                {/* Embrace Learning,
+                <br /> */}
+                Explore, Learn, Thrive
+                <br />
+                Embrace Excellence
+                <br />
+                <br />
+              </span>
+            </div>
+          </h1>
+        </div>
       </div>
       <div className="part3">
-        <div className="container">
+        <div className="BTNcontainer">
           <div className="btn">
             <a href="#">LOGIN/ SIGNUP</a>
           </div>
