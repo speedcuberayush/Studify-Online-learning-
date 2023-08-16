@@ -8,6 +8,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div className="footerpart">
@@ -55,10 +57,14 @@ export default function Landing() {
         <div className="part3">
           <div className="BTNcontainer">
             <div className="btn">
-              <a href="#">LOGIN/ SIGNUP</a>
+              <a href="#">
+                <Link to="/login">LOGIN/ SIGNUP</Link>
+              </a>
             </div>
             <div className="btn">
-              <a href="#">DOWNLOAD NOW</a>
+              <a href="#">
+                <Link to="/transition">DOWNLOAD NOW</Link>
+              </a>
             </div>
           </div>
         </div>

@@ -4,15 +4,22 @@ import PageTransition from "./Components/PageTransition.jsx";
 import Landingpage from "./Components/Landingpage.jsx";
 import Authenticationpage from "./Components/Authenticationpage.jsx";
 import Error404 from "./Components/Error404.jsx";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
-      <Landingpage />
-      {/* <PageTransition /> */}
-      {/* <Authenticationpage /> */}
-      {/* <Error404 /> */}
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Routes>
+          {/* <ProjectPreloader /> */}
+          <Route path={"/"} element={<Landingpage />}></Route>
+          <Route path={"/login"} element={<Authenticationpage />}></Route>
+          <Route path={"/transition"} element={<PageTransition />}></Route>
+          <Route path={"*"} element={<Error404 />}></Route>
+
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
