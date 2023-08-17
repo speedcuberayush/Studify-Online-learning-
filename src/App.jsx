@@ -6,6 +6,7 @@ import PageTransition from "./Components/PageTransition.jsx";
 import Error404 from "./Components/Error404.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
+import Aboutus from "./Components/Aboutus.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function App() {
             <Routes>
               <Route path={"/"} element={<Landingpage />} />
               <Route path={"/login"} element={<Authenticationpage />} />
+              <Route path={"/aboutus"} element={<Aboutus />} />
               <Route path={"/transition"} element={<PageTransition />} />
               <Route path={"*"} element={<Error404 />} />
             </Routes>
