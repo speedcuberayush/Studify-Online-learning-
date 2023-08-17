@@ -8,28 +8,30 @@ import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a 7-second loading process
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 7000);
-
-    return () => clearTimeout(timer);
+    // Simulate loading time
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000); // Adjust the duration as needed
   }, []);
 
   return (
     <BrowserRouter>
       <div className="app">
-        {isLoading && <ProjectPreloader />}
-        <Routes>
-          <Route path={"/"} element={<Landingpage />} />
-          <Route path={"/login"} element={<Authenticationpage />} />
-          <Route path={"/transition"} element={<PageTransition />} />
-          <Route path={"*"} element={<Error404 />} />
-        </Routes>
-        {/* <Navbar /> */}
+        {loading ? (
+          <ProjectPreloader /> // Display the preloader while loading
+        ) : (
+          <>
+            <Routes>
+              <Route path={"/"} element={<Landingpage />} />
+              <Route path={"/login"} element={<Authenticationpage />} />
+              <Route path={"/transition"} element={<PageTransition />} />
+              <Route path={"*"} element={<Error404 />} />
+            </Routes>
+          </>
+        )}
       </div>
     </BrowserRouter>
   );
