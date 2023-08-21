@@ -7,6 +7,7 @@ import Error404 from "./Components/Error404.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
+import './App.css'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ function App() {
           <ProjectPreloader /> // Display the preloader while loading
         ) : (
           <>
+            <Navbar />
             <Routes>
               <Route path={"/"} element={<Landingpage />} />
               <Route path={"/login"} element={<Authenticationpage />} />
