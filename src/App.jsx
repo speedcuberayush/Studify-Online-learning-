@@ -7,7 +7,8 @@ import Error404 from "./Components/Error404.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
-import './App.css'
+import "./App.css";
+import Contact from "./Components/Contact.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,7 +17,7 @@ function App() {
     // Simulate loading time
     setTimeout(() => {
       setLoading(false);
-    }, 6500); // Adjust the duration as needed
+    }, 5500); // Adjust the duration as needed
   }, []);
 
   return (
@@ -26,12 +27,15 @@ function App() {
           <ProjectPreloader /> // Display the preloader while loading
         ) : (
           <>
+            {/* Render Navbar outside the Routes */}
             <Navbar />
             <Routes>
               <Route path={"/"} element={<Landingpage />} />
+              {/* Don't render Navbar in /login */}
               <Route path={"/login"} element={<Authenticationpage />} />
               <Route path={"/aboutus"} element={<Aboutus />} />
               <Route path={"/transition"} element={<PageTransition />} />
+              {/* Render Navbar in Error404 */}
               <Route path={"*"} element={<Error404 />} />
             </Routes>
           </>

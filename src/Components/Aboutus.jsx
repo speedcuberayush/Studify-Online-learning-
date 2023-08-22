@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Aboutus.css";
+import Contact from "./Contact";
 
 function Aboutus() {
   return (
@@ -12,12 +13,38 @@ function Aboutus() {
           </div>
         </section>
         <section>
-          <div className="parallax-one">
-            <h2>SOUTHERN CALIFORNIA</h2>
+          <div
+            className="parallax-one"
+            style={{
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {/* <h2>SOUTHERN CALIFORNIA</h2>
+            <p style={{ color: "#fff" }}>
+              Studify aims to address the fragmented nature of learning, content
+              creation, and career development platforms by offering an
+              integrated solution that combines courses, articles, AI content
+              generation, programming resources, and career opportunities. The
+              platform seeks to simplify and enhance the learning and growth
+              experience for users by providing a single platform that caters to
+              multiple educational and professional needs.
+            </p> */}
           </div>
         </section>
         <section>
-          <div className="block">
+          <div
+            className="block"
+            style={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <p>
               <span className="first-character sc">S</span>tudify aims to
               address the fragmented nature of learning, content creation, and
@@ -43,12 +70,30 @@ function Aboutus() {
           </div>
         </section>
         <section>
-          <div className="parallax-two">
-            <h2>NEW YORK</h2>
+          <div
+            className="parallax-two"
+            style={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <h2>THE PROCESS</h2>
           </div>
         </section>
         <section>
-          <div className="block">
+          <div
+            className="block"
+            style={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <p>
               <span className="first-character ny">B</span>reaking into the New
               York fashion world is no easy task. But by the early 2000's, UGG
@@ -82,12 +127,30 @@ function Aboutus() {
           </div>
         </section>
         <section>
-          <div className="parallax-three">
+          <div
+            className="parallax-three"
+            style={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <h2>ENCHANTED FOREST</h2>
           </div>
         </section>
         <section>
-          <div className="block">
+          <div
+            className="block"
+            style={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <p>
               <span className="first-character atw">W</span>hen the New York
               fashion community notices your brand, the world soon follows. The
@@ -123,8 +186,23 @@ function Aboutus() {
           </div>
         </section>
         <section>
-          <div className="parallax-one">
+          <div
+            className="parallax-one"
+            style={{
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <h2>Contact us</h2>
+            <div className="contactwalaforms">
+              <div className="contactwalapart1">LOCATION</div>
+              <div className="contactwalapart2">
+                <Contact />
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
 
 /* Override UGG site */
 
@@ -8,7 +8,6 @@
   padding: 0;
 }
 .content-asset p {
-
   margin: 0 auto;
 }
 .breadcrumb {
@@ -220,3 +219,11 @@
     width: 290px;
   }
 }
+
+.contactwalaforms {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
