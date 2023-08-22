@@ -200,7 +200,8 @@ function Aboutus() {
             <div className="contactwalaforms">
               <div className="contactwalapart1">LOCATION</div>
               <div className="contactwalapart2">
-                <Contact />
+                CONTACT DETAILS
+                
               </div>
             </div>
           </div>

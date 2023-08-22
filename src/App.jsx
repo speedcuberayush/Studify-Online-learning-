@@ -8,6 +8,8 @@ import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
 import "./App.css";
+import "./Components/Chat.jsx"
+import Chat from "./Components/Chat.jsx"
 import Contact from "./Components/Contact.jsx";
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
               <Route path={"/login"} element={<Authenticationpage />} />
               <Route path={"/aboutus"} element={<Aboutus />} />
               <Route path={"/transition"} element={<PageTransition />} />
+              <Route path={"/chat"} element={<Chat />} />
               {/* Render Navbar in Error404 */}
               <Route path={"*"} element={<Error404 />} />
             </Routes>

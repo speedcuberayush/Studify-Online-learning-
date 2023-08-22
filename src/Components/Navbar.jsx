@@ -1,68 +1,79 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  CssBaseline,
-  useScrollTrigger,
-  Slide,
-  IconButton,
-} from "@mui/material";
-import { Home, Info, Chat, School } from "@mui/icons-material";
+import React, { useState, useEffect, useRef } from "react";
+import "./styles/Navbar.css";
+import { NavLink } from "react-router-dom";
 
-const pages = [
-  { label: "Home", icon: <Home />, link: "/" },
-  { label: "About Us", icon: <Info />, link: "/aboutus" },
-  { label: "Chat", icon: <Chat />, link: "/chat" },
-  { label: "Learn", icon: <School />, link: "/learn" },
-];
+function Navbar() {
+  const [activeItem, setActiveItem] = useState(null);
+  const [indicatorStyles, setIndicatorStyles] = useState({});
+  const items = [
+    { text: "A", path: "", color: "#0096ff", ref: useRef(null) },
+    { text: "B", path: "login", color: "#0096ff", ref: useRef(null) },
+    { text: "C", path: "chat", color: "#0096ff", ref: useRef(null) },
+    { text: "D", path: "aboutus", color: "#0096ff", ref: useRef(null) },
+    { text: "E", path: "", color: "#0096ff", ref: useRef(null) },
+  ];
 
-function HideOnScroll(props) {
-  const { children } = props;
-  const trigger = useScrollTrigger();
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
-
-function NavBar() {
-  const location = useLocation();
-  const [activePage, setActivePage] = useState(location.pathname);
+  const indicatorRef = useRef(null);
 
   useEffect(() => {
-    setActivePage(location.pathname);
-  }, [location]);
+    if (activeItem) {
+      const el = activeItem.ref.current;
+      if (el) {
+        const newStyles = {
+          width: `${el.offsetWidth}px`,
+          left: `${el.offsetLeft}px`,
+          backgroundColor: el.getAttribute("data-active-color"),
+        };
+        setIndicatorStyles(newStyles);
+      }
+    }
+  }, [activeItem]);
+
+  const handleItemClick = (item) => {
+    setActiveItem(item);
+  };
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <HideOnScroll>
-        <AppBar style={{ position: "fixed", top: 0 }}>
-          <Toolbar>
-            <Typography variant="h6">My Website</Typography>
-            {pages.map((page) => (
-              <Link
-                key={page.label}
-                to={page.link}
-                style={{ textDecoration: "none", color: "white" }}
+    <div className="mainNavbar">
+      <div className="badaNav">
+        <div className="Navigationwala">
+          <nav className="nav">
+            {items.map((item, index) => (
+              <NavLink
+                key={index}
+                to={`/${item.path}`} // Update the URL path as needed
+                className={`nav-item ${activeItem === item ? "is-active" : ""}`}
+                data-active-color={item.color}
+                ref={item.ref}
+                onClick={() => handleItemClick(item)}
+                style={{ color: activeItem === item ? item.color : "" }}
               >
-                <IconButton
-                  color={activePage === page.link ? "secondary" : "inherit"}
-                >
-                  {page.icon}
-                </IconButton>
-              </Link>
+                {item.text}
+              </NavLink>
             ))}
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
-      <Toolbar /> {/* For ensuring content starts below the fixed navbar */}
-    </React.Fragment>
+            <span
+              className="nav-indicator"
+              style={{
+                ...indicatorStyles,
+                position: "absolute",
+                bottom: "0",
+              }}
+              ref={indicatorRef}
+            ></span>
+          </nav>
+        </div>
+      </div>
+      
+      <div id="premium">
+        <button className="learn-more">
+          <span className="circle" aria-hidden="true">
+            <span className="icon arrow" />
+          </span>
+          <span className="button-text">Go Premium</span>
+        </button>
+      </div>
+    </div>
   );
 }
 
-export default NavBar;
+export default Navbar;
