@@ -9,15 +9,43 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
 import { Link } from "react-router-dom";
+import { GitHub, YouTube } from "@mui/icons-material";
 
 function Footer() {
   return (
-    <div className="footerpart">
-      <FacebookIcon />
-      <InstagramIcon />
-      <TwitterIcon />
-      <LinkedInIcon />
-      <EmailIcon />
+    <div className="footerwala">
+      <ul className="footerWrapper">
+        <li className="icon facebook">
+          <span className="tooltip">Facebook</span>
+          <span>
+            <FacebookIcon />
+          </span>
+        </li>
+        <li className="icon twitter">
+          <span className="tooltip">Twitter</span>
+          <span>
+            <TwitterIcon />
+          </span>
+        </li>
+        <li className="icon instagram">
+          <span className="tooltip">Instagram</span>
+          <span>
+            <InstagramIcon />
+          </span>
+        </li>
+        <li className="icon github">
+          <span className="tooltip">Github</span>
+          <span>
+            <GitHub />
+          </span>
+        </li>
+        <li className="icon youtube">
+          <span className="tooltip">Youtube</span>
+          <span>
+            <YouTube />
+          </span>
+        </li>
+      </ul>
     </div>
   );
 }
