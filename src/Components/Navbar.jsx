@@ -2,17 +2,44 @@ import React, { useState, useEffect, useRef } from "react";
 import "./styles/Navbar.css";
 import { NavLink } from "react-router-dom";
 
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import ExploreIcon from "@mui/icons-material/Explore";
+import ChatIcon from "@mui/icons-material/Chat";
+import CodeIcon from "@mui/icons-material/Code";
+import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
+import InfoIcon from "@mui/icons-material/Info";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
 function Navbar() {
   const [activeItem, setActiveItem] = useState(null);
   const [indicatorStyles, setIndicatorStyles] = useState({});
   const items = [
-    { text: "A", path: "", color: "#0096ff", ref: useRef(null) },
-    { text: "B", path: "login", color: "#0096ff", ref: useRef(null) },
-    { text: "C", path: "chat", color: "#0096ff", ref: useRef(null) },
-    { text: "D", path: "aboutus", color: "#0096ff", ref: useRef(null) },
-    { text: "E", path: "", color: "#0096ff", ref: useRef(null) },
-    { text: "F", path: "", color: "#0096ff", ref: useRef(null) },
-    { text: "G", path: "", color: "#0096ff", ref: useRef(null) },
+    { text: <MenuBookIcon />, path: "", color: "#0096ff", ref: useRef(null) },
+    {
+      text: <ExploreIcon />,
+      path: "login",
+      color: "#0096ff",
+      ref: useRef(null),
+    },
+    { text: <ChatIcon />, path: "chat", color: "#0096ff", ref: useRef(null) },
+    {
+      text: <SmartToyIcon />,
+      path: "aboutus",
+      color: "#0096ff",
+      ref: useRef(null),
+    },
+    { text: <CodeIcon />, path: "", color: "#0096ff", ref: useRef(null) },
+    {
+      text: <DriveFileRenameOutlineIcon />,
+      path: "",
+      color: "#0096ff",
+      ref: useRef(null),
+    },
+    {
+      text: <InfoIcon />,
+      path: "aboutus",
+      color: "#0096ff",
+      ref: useRef(null),
+    },
   ];
 
   const indicatorRef = useRef(null);
@@ -37,12 +64,18 @@ function Navbar() {
 
   return (
     <div className="mainNavbar">
-      <button data-text="Awesome" class="LOGObtn">
-        <span class="actual-text">&nbsp;STUDIFY&nbsp;</span>
-        <span class="hover-text" aria-hidden="true">
-          &nbsp;STUDIFY&nbsp;
-        </span>
-      </button>
+      <NavLink to="/" style={{ textDecoration: "None" }}>
+        <button
+          data-text="Awesome"
+          class="LOGObtn"
+          style={{ cursor: "pointer" }}
+        >
+          <span class="actual-text">&nbsp;STUDIFY&nbsp;</span>
+          <span class="hover-text" aria-hidden="true">
+            &nbsp;STUDIFY&nbsp;
+          </span>
+        </button>
+      </NavLink>
 
       <div className="badaNav">
         <div className="Navigationwala">
@@ -98,10 +131,10 @@ function Navbar() {
         </NavLink>
         {/* <div id="premium">
           <button className="learn-more">
-            <span className="circle" aria-hidden="true">
-              <span className="icon arrow" />
-            </span>
-            <span className="button-text">Go Premium</span>
+          <span className="circle" aria-hidden="true">
+          <span className="icon arrow" />
+          </span>
+          <span className="button-text">Go Premium</span>
           </button>
         </div> */}
       </div>

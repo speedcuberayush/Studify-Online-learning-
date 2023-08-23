@@ -12,6 +12,8 @@ import "./Components/Chat.jsx"
 import Chat from "./Components/Chat.jsx"
 import Contact from "./Components/Contact.jsx";
 
+
+
 function App() {
   const [loading, setLoading] = useState(true);
 
