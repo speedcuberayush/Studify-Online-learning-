@@ -8,11 +8,11 @@ import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
 import "./App.css";
-import "./Components/Chat.jsx"
-import Chat from "./Components/Chat.jsx"
+import "./Components/Chat.jsx";
+import Chat from "./Components/Chat.jsx";
 import Contact from "./Components/Contact.jsx";
-
-
+import Home from "./Components/Home.jsx";
+import Tabs from "./Components/Tabs.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +40,7 @@ function App() {
               <Route path={"/aboutus"} element={<Aboutus />} />
               <Route path={"/transition"} element={<PageTransition />} />
               <Route path={"/chat"} element={<Chat />} />
+              <Route path={"/home"} element={<Home />} />
               {/* Render Navbar in Error404 */}
               <Route path={"*"} element={<Error404 />} />
             </Routes>
