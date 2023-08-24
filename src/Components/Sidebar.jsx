@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./styles/Home.css"; // Import your CSS file if needed
-import { Link } from "react-router-dom";
+import "./styles/Sidebar.css"; // Import your CSS file if needed
+import { NavLink } from "react-router-dom";
 
-function Home() {
+function Sidebar() {
   const [isActive, setIsActive] = useState(false);
 
   const handleHamburgerClick = () => {
@@ -48,37 +48,27 @@ function Home() {
         <ul>
           <li className="active">
             <a href="#" style={{ "--i": "0.05s" }}>
-              <Link to="/home" style={{ textDecoration: "None" }}>
-                Home
-              </Link>
+              Home
             </a>
           </li>
           <li>
             <a href="#" style={{ "--i": "0.15s" }}>
-              <Link to="/learn" style={{ textDecoration: "None" }}>
-                LEARN
-              </Link>
+              LEARN
             </a>
           </li>
           <li>
             <a href="#" style={{ "--i": "0.2s" }}>
-              <Link to="/explore" style={{ textDecoration: "None" }}>
-                EXPLORE
-              </Link>
+              EXPLORE
             </a>
           </li>
           <li>
             <a href="#" style={{ "--i": "0.25s" }}>
-              <Link to="/aboutus" style={{ textDecoration: "None" }}>
-                About us
-              </Link>
+              About us
             </a>
           </li>
           <li>
             <a href="#" style={{ "--i": "0.1s" }}>
-              <Link to="/" style={{ textDecoration: "None" }}>
-                Sign Out
-              </Link>
+              Sign Out
             </a>
           </li>
         </ul>
@@ -87,4 +77,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Sidebar;

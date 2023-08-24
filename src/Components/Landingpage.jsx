@@ -80,7 +80,7 @@ export default function Landing() {
                 </span>
               </div>
             </h1>
-          </div>
+          </div>  
         </div>
         <div className="part3">
           <div className="BTNcontainer">
@@ -91,7 +91,7 @@ export default function Landing() {
             </div>
             <div className="btn">
               <a href="#">
-                <Link to="/transition">DOWNLOAD NOW</Link>
+                <Link to="/home">DOWNLOAD NOW</Link>
               </a>
             </div>
           </div>
