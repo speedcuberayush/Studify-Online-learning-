@@ -4,6 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import { Link } from "react-router-dom";
 const Authenticationpage = () => {
   const handleSignUpClick = () => {
     const container = document.getElementById("container");
@@ -57,7 +58,9 @@ const Authenticationpage = () => {
                 type="password"
                 placeholder="Password"
               />
-              <button className="Authbtn">Sign Up</button>
+              <Link to={"/home"}>
+                <button className="Authbtn">Sign Up</button>
+              </Link>
             </form>
           </div>
           <div className="form-container sign-in-container">
@@ -93,7 +96,9 @@ const Authenticationpage = () => {
               <a className="social" href="#">
                 Forgot your password?
               </a>
-              <button className="Authbtn">Sign In</button>
+              <Link to={"/home"}>
+                <button className="Authbtn">Sign In</button>
+              </Link>
             </form>
           </div>
           <div className="overlay-container">

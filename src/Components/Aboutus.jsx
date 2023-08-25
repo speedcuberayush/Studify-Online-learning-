@@ -137,7 +137,7 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <h2>ENCHANTED FOREST</h2>
+            <h2>OUR PARTNERS</h2>
           </div>
         </section>
         <section>

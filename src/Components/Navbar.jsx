@@ -13,24 +13,34 @@ function Navbar() {
   const [activeItem, setActiveItem] = useState(null);
   const [indicatorStyles, setIndicatorStyles] = useState({});
   const items = [
-    { text: <MenuBookIcon />, path: "", color: "#0096ff", ref: useRef(null) },
+    {
+      text: <MenuBookIcon />,
+      path: "learn",
+      color: "#0096ff",
+      ref: useRef(null),
+    },
     {
       text: <ExploreIcon />,
-      path: "login",
+      path: "auth",
       color: "#0096ff",
       ref: useRef(null),
     },
     { text: <ChatIcon />, path: "chat", color: "#0096ff", ref: useRef(null) },
     {
       text: <SmartToyIcon />,
-      path: "aboutus",
+      path: "ai",
       color: "#0096ff",
       ref: useRef(null),
     },
-    { text: <CodeIcon />, path: "", color: "#0096ff", ref: useRef(null) },
+    {
+      text: <CodeIcon />,
+      path: "transition",
+      color: "#0096ff",
+      ref: useRef(null),
+    },
     {
       text: <DriveFileRenameOutlineIcon />,
-      path: "",
+      path: "code",
       color: "#0096ff",
       ref: useRef(null),
     },
@@ -43,6 +53,14 @@ function Navbar() {
   ];
 
   const indicatorRef = useRef(null);
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const matchingItem = items.find((item) => `/${item.path}` === currentPath);
+    if (matchingItem) {
+      setActiveItem(matchingItem);
+    }
+  }, []);
 
   useEffect(() => {
     if (activeItem) {
@@ -76,14 +94,14 @@ function Navbar() {
           </span>
         </button>
       </NavLink>
-
       <div className="badaNav">
         <div className="Navigationwala">
           <nav className="nav">
             {items.map((item, index) => (
               <NavLink
                 key={index}
-                to={`/${item.path}`} // Update the URL path as needed
+                exact
+                to={`/${item.path}`}
                 className={`nav-item ${activeItem === item ? "is-active" : ""}`}
                 data-active-color={item.color}
                 ref={item.ref}
@@ -108,7 +126,7 @@ function Navbar() {
 
       <div className="BTNpart3">
         <div className="SignOUTwala">
-          <NavLink to="/">
+          <NavLink to="/login">
             <button class="Btn">
               <div class="butnsign">
                 <svg viewBox="0 0 512 512">
@@ -122,7 +140,7 @@ function Navbar() {
         </div>
 
         <NavLink to="/" style={{ textDecoration: "None" }}>
-          <button className="PremBTN">
+          <button className="PremBTN" style={{ cursor: "pointer" }}>
             Premium
             <div class="arrow-wrapper">
               <div class="arrow"></div>

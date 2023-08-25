@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Mainpart() {
+function AI() {
   return (
     <div>
       HI
@@ -8,4 +8,4 @@ function Mainpart() {
   )
 }
 
-export default Mainpart
+export default AI
