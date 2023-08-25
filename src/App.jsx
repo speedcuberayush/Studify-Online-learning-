@@ -14,6 +14,7 @@ import Contact from "./Components/Contact.jsx";
 import Home from "./Components/Home.jsx";
 import Learn from "./Components/Learn.jsx";
 import AI from "./Components/AI.jsx";
+import Explore from "./Components/Explore.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -55,6 +56,7 @@ function AppContent({ loading }) {
             <Route path={"/home"} element={<Home />} />
             <Route path={"/learn"} element={<Learn />} />
             <Route path={"/ai"} element={<AI />} />
+            <Route path={"/explore"} element={<Explore />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>
         </>
