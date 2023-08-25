@@ -1,3 +1,4 @@
+import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import Landingpage from "./Components/Landingpage.jsx";
@@ -7,14 +8,14 @@ import Error404 from "./Components/Error404.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
-import "./App.css";
 import "./Components/Chat.jsx";
 import Chat from "./Components/Chat.jsx";
-import Contact from "./Components/Contact.jsx";
 import Home from "./Components/Home.jsx";
 import Learn from "./Components/Learn.jsx";
 import AI from "./Components/AI.jsx";
 import Explore from "./Components/Explore.jsx";
+import TestPage from "./Components/TestPage.jsx";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -57,6 +58,7 @@ function AppContent({ loading }) {
             <Route path={"/learn"} element={<Learn />} />
             <Route path={"/ai"} element={<AI />} />
             <Route path={"/explore"} element={<Explore />} />
+            <Route path={"/test"} element={<TestPage />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>
         </>

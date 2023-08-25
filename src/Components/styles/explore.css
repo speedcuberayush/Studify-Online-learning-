@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+.explorePage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  background-color: #2a2a2a;
+}
+
+.exploreNavigation {
+  font-family: "Lilita One", cursive !important;
+}
+
+.exploreContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
