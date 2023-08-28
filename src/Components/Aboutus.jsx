@@ -80,7 +80,7 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <h2>THE PROCESS</h2>
+            {/* <h2 style={{color: "#2a2a2a"}}>THE PROCESS</h2> */}
           </div>
         </section>
         <section>
