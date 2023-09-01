@@ -89,7 +89,14 @@ function Explore() {
     <div>
       <div className="explorePage">
         <ExploreNavigation activeTab={activeTab} onChange={handleTabChange} />
-        <div className="exploreContent">
+        <div
+          className="exploreContent"
+          style={{
+            height: "calc(100vh - 100px-3.5rem)",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           {activeTab === 0 && <Part1 />}
           {activeTab === 1 && <Part2 />}
           {activeTab === 2 && <Part3 />}

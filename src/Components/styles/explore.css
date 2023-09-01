@@ -18,3 +18,40 @@
   align-items: center;
   overflow: auto;
 }
+
+.Part1kahumain {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.part1option {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-top: none;
+  border-bottom: none;
+}
+.part1option1 {
+  width: 20%;
+}
+.part1option3 {
+  width: 30%;
+}
+.part1option2 {
+  width: 50%;
+}
+
+.part1option2 {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  border: 2px solid #fff;
+}
