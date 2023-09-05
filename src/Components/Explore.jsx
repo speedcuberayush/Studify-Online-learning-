@@ -6,6 +6,7 @@ import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import "./styles/explore.css";
+import News from "./News.jsx";
 
 function ExploreNavigation({ activeTab, onChange }) {
   return (
@@ -57,7 +58,7 @@ function ExploreNavigation({ activeTab, onChange }) {
 function Part1() {
   return (
     <>
-      <div>NEWS PARTS</div>
+      <News />
     </>
   );
 }
@@ -92,9 +93,6 @@ function Explore() {
         <div
           className="exploreContent"
           style={{
-            height: "calc(100vh - 100px-3.5rem)",
-            display: "flex",
-            flexDirection: "column",
           }}
         >
           {activeTab === 0 && <Part1 />}

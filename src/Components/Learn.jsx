@@ -10,7 +10,7 @@ import TimelineIcon from "@mui/icons-material/Timeline";
 import FeedIcon from "@mui/icons-material/Feed";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
 import AssessmentIcon from "@mui/icons-material/Assessment";
-
+import ExploreLearn from "./Learn/ExploreLearn.jsx";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -126,8 +126,7 @@ export default function Learn() {
         >
           {/* TabPanel components */}
           <TabPanel value={value} index={0}>
-            <div className="trendingCourses">TRENDING COURSES</div>
-            <div className="features">FEATURES</div>
+            <ExploreLearn />
           </TabPanel>
           <TabPanel value={value} index={1}>
             Item Two
