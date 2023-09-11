@@ -66,7 +66,7 @@ function Part1() {
 function Part2() {
   return (
     <>
-      <div>INTERNSHIP OPPORTUNITIES</div>
+      <News />
     </>
   );
 }
@@ -74,7 +74,7 @@ function Part2() {
 function Part3() {
   return (
     <>
-      <div>FREELANCING OPPORTUNITIES</div>
+      <News />
     </>
   );
 }
@@ -90,11 +90,7 @@ function Explore() {
     <div>
       <div className="explorePage">
         <ExploreNavigation activeTab={activeTab} onChange={handleTabChange} />
-        <div
-          className="exploreContent"
-          style={{
-          }}
-        >
+        <div className="exploreContent" >
           {activeTab === 0 && <Part1 />}
           {activeTab === 1 && <Part2 />}
           {activeTab === 2 && <Part3 />}

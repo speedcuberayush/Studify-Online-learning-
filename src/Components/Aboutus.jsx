@@ -73,7 +73,7 @@ function Aboutus() {
           <div
             className="parallax-two"
             style={{
-              height: "100vh",
+              height: "200vh",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",

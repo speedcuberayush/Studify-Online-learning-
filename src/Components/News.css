@@ -1,0 +1,29 @@
+.news {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.newsPart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Define styles for WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #0096ff transparent; /* Set the color of the scrollbar thumb and track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0096ff; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Set the border radius to change the shape */
+}
