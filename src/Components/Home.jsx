@@ -25,10 +25,20 @@ function Home() {
         <div className="puraPart">
           <header className="sirmtlbheader">
             <div className="aisehiclass">
-              <h2 className="title">Future is here</h2>
+              <h2 className="title">
+                WELCOME TO A NEW ERA OF TECH-ENCHANCED LEARNING
+              </h2>
               <p className="description">
-                “All our dreams can come true, if we have the courage to pursue
-                them.”
+                “Where Boundless Knowledge Meets Limitless Innovation.
+                <br />
+                Join Us on a Journey to Transform Education for the Digital
+                Age.”
+              </p>
+              <p className="description">
+                Our Mission is to Revolutionize the Learning Experience.
+                Explore, Learn, Create, and Achieve in a World Where Education
+                Meets Innovation. Dive into a Universe of Possibilities
+                <br />– Your Future Starts Here.  
               </p>
 
               <a

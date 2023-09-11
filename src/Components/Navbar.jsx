@@ -83,7 +83,7 @@ function Navbar() {
   return (
     <>
       <div className="mainNavbar">
-        <NavLink to="/" style={{ textDecoration: "None" }}>
+        <NavLink to="/home" style={{ textDecoration: "None" }}>
           <button
             data-text="Awesome"
             class="LOGObtn"

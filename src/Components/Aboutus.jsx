@@ -83,6 +83,8 @@ function Aboutus() {
             {/* <h2 style={{color: "#2a2a2a"}}>THE PROCESS</h2> */}
           </div>
         </section>
+
+        <Features />
         <section>
           <div
             className="block"
@@ -94,7 +96,7 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <p>
+            {/* <p>
               <span className="first-character ny">B</span>reaking into the New
               York fashion world is no easy task. But by the early 2000's, UGG
               Australia began to take it by storm. The evolution of UGG from a
@@ -123,7 +125,7 @@ function Aboutus() {
               maintaining that luxurious feel UGG is known for all over the
               world. UGG products were now seen on runways and in fashion shoots
               from coast to coast. Before long, the love spread even further.
-            </p>
+            </p> */}
           </div>
         </section>
         <section>
@@ -199,10 +201,7 @@ function Aboutus() {
             <h2>Contact us</h2>
             <div className="contactwalaforms">
               <div className="contactwalapart1">LOCATION</div>
-              <div className="contactwalapart2">
-                CONTACT DETAILS
-                
-              </div>
+              <div className="contactwalapart2">CONTACT DETAILS</div>
             </div>
           </div>
         </section>
@@ -212,3 +211,92 @@ function Aboutus() {
 }
 
 export default Aboutus;
+
+function Features() {
+  return (
+    <>
+      {" "}
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <div className="dabbamedabba">
+        <h2 className="TimelineHeading">FUTURE WORKS</h2>
+        <div className="timeline">
+          <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+            <div className="timeline__event__icon ">
+              <i className="lni-cake" />
+            </div>
+            <div className="timeline__event__date">Mobile App</div>
+            <div className="timeline__event__content ">
+              <div className="timeline__event__title">----</div>
+              <div className="timeline__event__description">
+                <p>
+                  Create a mobile app version of Studify to provide users with
+                  on-the-go access to learning resources and challenges
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div className="timeline__event__icon">
+              <i className="lni-burger" />
+            </div>
+            <div className="timeline__event__date">
+              Project <br />
+              Showcases
+            </div>
+            <div className="timeline__event__content">
+              <div className="timeline__event__title">----</div>
+              <div className="timeline__event__description">
+                <p>
+                  Enable users to showcase their coding projects, AI models, or
+                  completed courses in a dedicated portfolio section to
+                  highlight their skills and accomplishments.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div className="timeline__event__icon">
+              <i className="lni-slim" />
+            </div>
+            <div className="timeline__event__date">
+              AI <br />
+              INTEGRATION
+            </div>
+            <div className="timeline__event__content">
+              <div className="timeline__event__title">----</div>
+              <div className="timeline__event__description">
+                <p>
+                  Infuse AI seamlessly into every facet of the learning path.
+                  This ambitious endeavor will harness the power of AI to
+                  provide users with advanced, personalized learning experiences
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="timeline__event animated fadeInUp timeline__event--type1">
+            <div className="timeline__event__icon">
+              <i className="lni-cake" />
+            </div>
+            <div className="timeline__event__date">
+              Project <br />
+              Showcases
+            </div>
+            <div className="timeline__event__content">
+              <div className="timeline__event__title">----</div>
+              <div className="timeline__event__description">
+                <p>
+                  Enable users to showcase their coding projects, AI models, or
+                  completed courses in a dedicated portfolio section to
+                  highlight their skills and accomplishments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
