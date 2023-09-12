@@ -5,11 +5,25 @@ import Contact from "./Contact";
 function Benifits() {
   return (
     <>
-      <h1>one</h1>
-      <h1>toward</h1>
-      <h1>three</h1>
-      <h1>four</h1>
-      <h1>five</h1>
+      <div className="BenifitsPart">
+        <div className="Benifitscontainer">
+          <div className="Benifitscard">
+            <h2 className="BenifitsH2">1</h2>
+          </div>
+          <div className="Benifitscard">
+            <h2 className="BenifitsH2">2</h2>
+          </div>
+          <div className="Benifitscard">
+            <h2 className="BenifitsH2">3</h2>
+          </div>
+          <div className="Benifitscard">
+            <h2 className="BenifitsH2">4</h2>
+          </div>
+          <div className="Benifitscard">
+            <h2 className="BenifitsH2">5</h2>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
@@ -94,9 +108,10 @@ function Aboutus() {
             {/* <h2 style={{color: "#2a2a2a"}}>THE PROCESS</h2> */}
           </div>
         </section>
-
+        <h2 className="TimelineHeading">FEATURES & BENIFITS</h2>
         <Benifits />
         <Features />
+
         <section>
           <div
             className="block"

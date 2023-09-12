@@ -233,7 +233,7 @@
   /* color: #525f7f; */
 }
 .TimelineHeading {
-  color: #000!important;
+  color: #000 !important;
   margin: 5%;
   text-align: center;
   font-size: 2rem;
@@ -462,4 +462,65 @@
   }
 }
 
+.BenifitsPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: linear-gradient(
+    0deg,
+    #0b74cb 0%,
+    #0b74cb 50%,
+    #fff 50%,
+    #fff 100%
+  );
+}
+.Benifitscontainer {
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
 
+.Benifitscontainer .Benifitscard {
+  position: relative;
+  width: 180px;
+  height: 240px;
+  background: #fff;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+.Benifitscontainer:hover .Benifitscard {
+  transform: perspective(500px) rotateY(30deg);
+}
+.Benifitscontainer .Benifitscard:hover {
+  transform: perspective(500px) rotateY(0deg);
+}
+.Benifitscontainer .Benifitscard:hover ~ .Benifitscard {
+  transform: perspective(500px) rotateY(-30deg);
+}
+.Benifitscontainer .Benifitscard .BenifitsH2 {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 3em;
+  background: #2196f3;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  transition: box-shadow 0.5s;
+}
+.Benifitscontainer .Benifitscard:hover .BenifitsH2 {
+  background: #fff;
+  color: #2196f3!important;
+  box-shadow: 0 0 0 150px #2196f3;
+}
