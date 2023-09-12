@@ -24,7 +24,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box >
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -122,7 +122,7 @@ export default function Learn() {
           style={{
             flex: 1,
             overflowY: "auto", // Allow the content to scroll
-            padding: "20px", // Add some padding
+            // padding: "20px", // Add some padding
           }}
         >
           {/* TabPanel components */}

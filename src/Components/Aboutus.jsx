@@ -2,6 +2,17 @@ import React from "react";
 import "./styles/Aboutus.css";
 import Contact from "./Contact";
 
+function Benifits() {
+  return (
+    <>
+      <h1>one</h1>
+      <h1>toward</h1>
+      <h1>three</h1>
+      <h1>four</h1>
+      <h1>five</h1>
+    </>
+  );
+}
 function Aboutus() {
   return (
     <div>
@@ -84,6 +95,7 @@ function Aboutus() {
           </div>
         </section>
 
+        <Benifits />
         <Features />
         <section>
           <div
@@ -198,11 +210,12 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <h2>Contact us</h2>
+            <Contact />
+            {/* <h2>Contact us</h2>
             <div className="contactwalaforms">
               <div className="contactwalapart1">LOCATION</div>
               <div className="contactwalapart2">CONTACT DETAILS</div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

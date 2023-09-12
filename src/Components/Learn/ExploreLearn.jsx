@@ -1,17 +1,116 @@
 import React from "react";
 import "./ExploreLearn.css";
+import "./TrendingCouses.scss";
+
+import tutBabbar from "../../Images/tutBabbar.png";
+import tutClever from "../../Images/tutClever.png";
+import tutGfx from "../../Images/tutGfx.png";
+import tutHarry from "../../Images/tutHarry.png";
+function TrendingCourses() {
+  return (
+    <>
+      <div
+        className="TrendingwalaPart"
+        style={{
+          width: "100%",
+          overflowX: "hidden",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "rgb(30, 30, 35) ",
+        }}
+      >
+        <h1 style={{ color: "#fff" }}> EXPLORE NOW </h1>
+        <div className="ExploreNow">
+          <div className="carousel-wrapper">
+            {/* abstract radio buttons for slides */}
+            <input
+              id="slide1"
+              type="radio"
+              name="controls"
+              defaultChecked="checked"
+            />
+            <input id="slide2" type="radio" name="controls" />
+            <input id="slide3" type="radio" name="controls" />
+            <input id="slide4" type="radio" name="controls" />
+            <input id="slide5" type="radio" name="controls" />
+            {/* navigation dots */}
+            <label htmlFor="slide1" className="nav-dot" />
+            <label htmlFor="slide2" className="nav-dot" />
+            <label htmlFor="slide3" className="nav-dot" />
+            <label htmlFor="slide4" className="nav-dot" />
+            <label htmlFor="slide5" className="nav-dot" />
+            {/* arrows */}
+            <label htmlFor="slide1" className="left-arrow">
+              {" "}
+              &lt;{" "}
+            </label>
+            <label htmlFor="slide2" className="left-arrow">
+              {" "}
+              &lt;{" "}
+            </label>
+            <label htmlFor="slide3" className="left-arrow">
+              {" "}
+              &lt;{" "}
+            </label>
+            <label htmlFor="slide4" className="left-arrow">
+              {" "}
+              &lt;{" "}
+            </label>
+            <label htmlFor="slide5" className="left-arrow">
+              {" "}
+              &lt;{" "}
+            </label>
+            <label htmlFor="slide1" className="right-arrow">
+              {" "}
+              &gt;{" "}
+            </label>
+            <label htmlFor="slide2" className="right-arrow">
+              {" "}
+              &gt;{" "}
+            </label>
+            <label htmlFor="slide3" className="right-arrow">
+              {" "}
+              &gt;{" "}
+            </label>
+            <label htmlFor="slide4" className="right-arrow">
+              {" "}
+              &gt;{" "}
+            </label>
+            <label htmlFor="slide5" className="right-arrow">
+              {" "}
+              &gt;{" "}
+            </label>
+            <div className="carousel">
+              <ul>
+                <li>
+                  <img src={tutBabbar} alt="hi" />
+                </li>
+                <li>
+                  <img src={tutHarry} alt="" />
+                </li>
+                <li>
+                  <img src={tutGfx} />
+                </li>
+                <li>
+                  <img src={tutClever} />
+                </li>
+                <li>
+                  <img src={tutHarry} alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
 function ExploreLearn() {
   return (
     <div className="exploreLearningpart">
-      <div
-        className="TrendingCourses"
-        style={{ width: "100%", height: "80vh" }}
-      >
-        TRENDING COURSES
-        <div className="boxed" style={{ border: "2px solid #000" }}>
-          COURSES SLIDER
-        </div>
-      </div>
+      <TrendingCourses />
       <div className="Tareef">
         <h1 style={{ textAlign: "center" }}>COURSES PROVIDERS</h1>
         <div
