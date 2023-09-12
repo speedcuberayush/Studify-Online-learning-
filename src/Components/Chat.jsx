@@ -1,12 +1,11 @@
-import React from "react";
-import Mainpart from "./Mainpart";
+import React from 'react'
 
 function Chat() {
   return (
     <div>
-      <Mainpart />
+      HI HO 
     </div>
-  );
+  )
 }
 
-export default Chat;
+export default Chat

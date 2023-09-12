@@ -87,7 +87,7 @@ export default function Learn() {
           }}
         >
           {/* Tab components */}
-          <Tab
+          <Tab  
             className="sidebarhumainjatihaikya"
             icon={<AssessmentIcon />}
             label="EXPLORE"

@@ -1,5 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./News.css";
+import ShareIcon from "@mui/icons-material/Share";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ForumIcon from "@mui/icons-material/Forum";
+import FileOpenIcon from "@mui/icons-material/FileOpen";
+
+function Feed() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleFavorite = () => {
+    setIsActive(!isActive);
+  };
+
+  return (
+    <div className="news">
+      <div className="picFEED">mera content</div>
+      <div className="FEEDOPTIONS">
+        <li>
+          <FavoriteIcon
+            style={{
+              color: isActive ? "#0096ff" : "inherit",
+              cursor: "pointer",
+              transition: "color 0.3s, transform 0.3s",
+            }}
+            onClick={toggleFavorite}
+            className={isActive ? "active" : ""}
+          />
+          <p className="FeedOptionsText">REACT</p>
+        </li>
+        <li>
+          <ForumIcon className="FEEDOPTiONICONHUBHAI" />
+          <p className="FeedOptionsText">COMMENT</p>
+        </li>
+        <li>
+          <ShareIcon className="FEEDOPTiONICONHUBHAI" />
+          <p className="FeedOptionsText">SHARE</p>
+        </li>
+        <li>
+          <FileOpenIcon className="FEEDOPTiONICONHUBHAI" />
+          <p className="FeedOptionsText">OPEN EXTERNAL</p>
+        </li>
+      </div>
+    </div>
+  );
+}
 function News() {
   return (
     <>
@@ -12,7 +56,7 @@ function News() {
           borderRight: "2px solid #fff",
           width: "55%",
           display: "flex",
-          height: "calc(100vh - 172px)", // Adjust the value as needed
+          height: "calc(100vh - 170px)", // Adjust the value as needed
 
           flexDirection: "column",
           justifyContent: "center",
@@ -24,90 +68,64 @@ function News() {
         <div
           className="newsPart"
           style={{
+            flex: 1,
             // height: "calc(100vh-172px)",
-            overflowY: "scroll",
+            overflowY: "auto",
           }}
         >
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI BRO </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI DIDI </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-          <div className="news">
-            <p>BHAI ME TO PEHLA PART HOON </p>
-            <p>one </p>
-            <p>two</p>
-            <p>three</p>
-          </div>
-
-          <div className="newsRight">RIGHT PART HU MAIN</div>
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
+          <Feed />
         </div>
       </div>
     </>

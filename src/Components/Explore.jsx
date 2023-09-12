@@ -11,7 +11,7 @@ import News from "./News.jsx";
 function ExploreNavigation({ activeTab, onChange }) {
   return (
     <div className="ExploreNavigation">
-      <Box sx={{ bgcolor: "#000" }}>
+      <Box sx={{ height: "70px", bgcolor: "#000" }}>
         <Tabs
           value={activeTab}
           onChange={onChange}
@@ -74,7 +74,7 @@ function Part2() {
 function Part3() {
   return (
     <>
-      <News />
+    <News/>
     </>
   );
 }
@@ -90,7 +90,7 @@ function Explore() {
     <div>
       <div className="explorePage">
         <ExploreNavigation activeTab={activeTab} onChange={handleTabChange} />
-        <div className="exploreContent" >
+        <div className="exploreContent">
           {activeTab === 0 && <Part1 />}
           {activeTab === 1 && <Part2 />}
           {activeTab === 2 && <Part3 />}

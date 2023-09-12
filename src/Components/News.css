@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800;900&display=swap");
 .news {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -6,13 +7,10 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  margin-bottom: 10px;
 }
 .newsPart {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 10px;
 }
 
@@ -27,3 +25,58 @@
   background-color: #0096ff; /* Set the color of the scrollbar thumb */
   border-radius: 5px; /* Set the border radius to change the shape */
 }
+
+.picFEED {
+  display: flex;
+  height: 400px;
+  width: 700px;
+  border: 2px solid #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FEEDOPTIONS {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.FEEDOPTIONS li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FeedOptionsText {
+  font-family: "Recursive", sans-serif;
+}
+
+.FEEDOPTIONS li:hover {
+  cursor: pointer;
+  animation: zoom 10s;
+  /* transform: scale(1.1); */
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1); /* Zoom in a little bit */
+  }
+}
+
+/* .active {
+  animation: zoom 0.3s;
+} */
+
+/* Add hover effect for the icon */
+/* .active:hover {
+  color: #0096ff;
+} */
+/* Change color on hover when active */
