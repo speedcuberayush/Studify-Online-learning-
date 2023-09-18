@@ -6,48 +6,26 @@ function Course() {
   return (
     <div className="Coursepart">
       <div className="Coursepart1">
-        TRENDING COURSES <br />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
-        <Coursecard />
+        <h2 className="cpHEADING">TRENDING COURSES</h2>
+        <div className="cpCARDS">
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+          <Coursecard />
+        </div>
       </div>
-      <div className="Coursepart2">GATE</div>
-      <div className="Coursepart3">DSA</div>
-      <div className="Coursepart4">DSA PRACTICE</div>
-      <div className="Coursepart5">COLLEGE</div>
-      <div className="Coursepart6">EDITING</div>
-      <div className="Coursepart7">ONE SHOTS</div>
-      <div className="Coursepart8">PROJECTS</div>
+      <div className="cp Coursepart2">GATE</div>
+      <div className="cp Coursepart3">DSA</div>
+      <div className="cp Coursepart4">DSA PRACTICE</div>
+      <div className="cp Coursepart5">COLLEGE</div>
+      <div className="cp Coursepart6">EDITING</div>
+      <div className="cp Coursepart7">ONE SHOTS</div>
+      <div className="cp Coursepart8">PROJECTS</div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 .Coursepart {
   display: flex;
   flex-direction: column;
@@ -5,7 +6,24 @@
   align-items: center;
   flex-wrap: wrap;
   /* width: 100vw; */
-  height: 100vh;
+  min-height: 100vh;
+  /* color: #fff; */
+  background-color: #1e1e23;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+.cpCARDS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cpHEADING {
+  font-family: "Concert One", cursive;
   color: #fff;
-  background-color: rgb(30, 30, 35);
+  text-align: center;
+  font-size: 35px;
 }

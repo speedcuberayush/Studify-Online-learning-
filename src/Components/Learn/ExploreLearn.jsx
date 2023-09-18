@@ -13,6 +13,7 @@ function TrendingCourses() {
         className="TrendingwalaPart"
         style={{
           width: "100%",
+          padding: "20px",
           overflowX: "hidden",
           display: "flex",
           flexDirection: "column",
