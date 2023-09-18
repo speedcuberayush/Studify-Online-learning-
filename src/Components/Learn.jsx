@@ -12,6 +12,7 @@ import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import ExploreLearn from "./Learn/ExploreLearn.jsx";
 import Course from "./Learn/Course";
+import References from "./Learn/References";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -139,7 +140,7 @@ export default function Learn() {
             Item Four
           </TabPanel>
           <TabPanel value={value} index={4}>
-            Item Five
+            <References/>
           </TabPanel>
         </div>
       </Box>

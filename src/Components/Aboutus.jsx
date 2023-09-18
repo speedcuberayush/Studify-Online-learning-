@@ -70,7 +70,7 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <p>
+            {/* <p>
               <span className="first-character sc">S</span>tudify aims to
               address the fragmented nature of learning, content creation, and
               career development platforms by offering an integrated solution
@@ -91,7 +91,7 @@ function Aboutus() {
               transformative platform that seamlessly integrates a multitude of
               features, all geared toward empowering users on their journey of
               knowledge acquisition and self-improvement.
-            </p>
+            </p> */}
           </div>
         </section>
         <section>
@@ -180,7 +180,7 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <p>
+            {/* <p>
               <span className="first-character atw">W</span>hen the New York
               fashion community notices your brand, the world soon follows. The
               widespread love for UGG extended to Europe in the mid-2000's along
@@ -211,7 +211,7 @@ function Aboutus() {
               spread across the world, we have continued to offer new and
               unexpected ways to experience the brand. The UGG journey continues
               on and the love for UGG continues to spread.
-            </p>
+            </p> */}
           </div>
         </section>
         <section>
