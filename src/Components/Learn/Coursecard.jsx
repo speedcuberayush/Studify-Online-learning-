@@ -1,8 +1,11 @@
 import React from "react";
-import './Coursecard.css'
-function Coursecard() {
+import "./Coursecard.css";
+function Coursecard({
+  title = "COURSE TITLE",
+  description = "This is a sample description for the course",
+}) {
   return (
-    <div>
+    <div className="courseCardhubhaime">
       <div className="section_our_solution">
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12">
@@ -92,16 +95,12 @@ function Coursecard() {
                     </svg>
                   </div>
                   <div className="solu_title">
-                    <div>Demo 1</div>
+                    <div>{title}</div>
                   </div>
                   <div className="solu_description">
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout.
-                    </p>
+                    <p>{description}</p>
                     <button className="read_more_btn" type="button">
-                      Read More
+                      Explore
                     </button>
                   </div>
                 </div>

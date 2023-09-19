@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 .section_our_solution .row {
   align-items: center;
 }
@@ -69,11 +70,15 @@
   font-size: 1.3rem;
   margin-top: 13px;
   margin-bottom: 13px;
+  font-weight: bolder;
+  font-family: 'Boogaloo', cursive;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 .solution_card .solu_description p {
   font-size: 15px;
   margin-bottom: 15px;
+  font-family: 'Boogaloo', cursive;
 }
 
 .solution_card .solu_description button {
@@ -88,6 +93,7 @@
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
+  font-family: "Concert One", cursive;
   padding: 5px 16px;
   cursor: pointer;
 }

@@ -111,31 +111,16 @@ function TrendingCourses() {
 function ExploreLearn() {
   return (
     <div className="exploreLearningpart">
-      <TrendingCourses />
+      <div style={{ backgroundColor: "rgb(30,30,35)", width: "100%" }}>
+        <TrendingCourses />
+      </div>
       <div className="Tareef">
-        <h1 style={{ textAlign: "center" }}>COURSES PROVIDERS</h1>
-        <div
-          className="TareefCards"
-          style={{
-            listStyle: "none",
-            display: "flex",
-            flexDirection: "row",
-            width: "100%",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}
+        <h1
+          style={{ textAlign: "center", marginTop: "50px", fontSize: "45px" }}
         >
-          <li style={{ padding: "20px" }}>LOGO1</li>
-          <li style={{ padding: "20px" }}>LOGO2</li>
-          <li style={{ padding: "20px" }}>LOGO3</li>
-          <li style={{ padding: "20px" }}>LOGO4</li>
-          <li style={{ padding: "20px" }}>LOGO5</li>
-          <li style={{ padding: "20px" }}>LOGO6</li>
-          <li style={{ padding: "20px" }}>LOGO7</li>
-          <li style={{ padding: "20px" }}>LOGO8</li>
-          <li style={{ padding: "20px" }}>LOGO9</li>
-          <li style={{ padding: "20px" }}>LOGO10</li>
-        </div>
+          COURSES PROVIDERS
+        </h1>
+        <PARTNERSCARDS />
       </div>
       <div
         className="featuresandbenifits"
@@ -194,3 +179,81 @@ function ExploreLearn() {
 }
 
 export default ExploreLearn;
+
+function PARTNERSCARDS() {
+  return (
+    <div className="partnersCards">
+      <div className="logo-container">
+        <ul>
+          <li>
+            <div className="logo-holder logo-1">
+              <a href="#">
+                <h3>LINKEDIN</h3>
+                <p>LEARNING</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="logo-holder logo-2">
+              <a href="#">
+                <h3>ADOBE</h3>
+                <p>CREATIVITY</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="logo-holder logo-3">
+              <a href="#">
+                <h3>MICROSOFT</h3>
+                <p>Azure</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="logo-holder logo-4">
+              <a href="#">
+                <h3>Leetcode</h3>
+                <p>Challenges</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="logo-holder logo-5">
+              <a href="#">
+                <h3>google</h3>
+                <p>cloud</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="logo-holder logo-6">
+              <a href="#">
+                <h3>
+                  OPEN<span>AI</span>
+                </h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="logo-holder logo-9">
+              <a href="#">
+                <span>
+                  <i class="fas fa-bell"></i>
+                </span>
+                <h3>GFG</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="logo-holder logo-10">
+              <a href="#">
+                <h3>FIVVER</h3>
+                {/* <p>National geography</p> */}
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}

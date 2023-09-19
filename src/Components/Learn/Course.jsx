@@ -6,7 +6,7 @@ function Course() {
   return (
     <div className="Coursepart">
       <div className="Coursepart1">
-        <h2 className="cpHEADING">TRENDING COURSES</h2>
+        <h2 className="cpHEADING" style={{marginBottom:"10px"}}>TRENDING COURSES</h2>
         <div className="cpCARDS">
           <Coursecard />
           <Coursecard />
