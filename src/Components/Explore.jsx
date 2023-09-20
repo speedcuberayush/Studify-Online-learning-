@@ -5,6 +5,8 @@ import Tab from "@mui/material/Tab";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
+import NewReleasesIcon from "@mui/icons-material/NewReleases";
+
 import "./styles/explore.css";
 import News from "./News.jsx";
 
@@ -49,6 +51,14 @@ function ExploreNavigation({ activeTab, onChange }) {
               color: activeTab === 2 ? "#0096ff" : "#fff",
             }}
           />
+          <Tab
+            icon={<NewReleasesIcon />}
+            label="EVENTS"
+            className="exploreNavigation"
+            sx={{
+              color: activeTab === 3 ? "#0096ff" : "#fff",
+            }}
+          />
         </Tabs>
       </Box>
     </div>
@@ -74,7 +84,14 @@ function Part2() {
 function Part3() {
   return (
     <>
-    <News/>
+      <News />
+    </>
+  );
+}
+function Part4() {
+  return (
+    <>
+      <News />
     </>
   );
 }
@@ -94,6 +111,7 @@ function Explore() {
           {activeTab === 0 && <Part1 />}
           {activeTab === 1 && <Part2 />}
           {activeTab === 2 && <Part3 />}
+          {activeTab === 3 && <Part4 />}
         </div>
       </div>
     </div>

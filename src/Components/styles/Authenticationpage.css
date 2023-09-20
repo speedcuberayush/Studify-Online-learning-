@@ -239,19 +239,10 @@ form {
   width: 40px;
 }
 
-.instagram:hover {
-  background-color: #c13584;
-  color: #fff;
-}
-.linkedin:hover {
-  background-color: #0096ff;
-  color: #fff;
-}
-.github:hover {
-  background-color: #2a2a2a;
-  color: #fff;
-}
+.instagram:hover,
+.linkedin:hover,
+.github:hover,
 .google:hover {
-  background-color: #0f9d58;
+  background-color: #0096ff;
   color: #fff;
 }

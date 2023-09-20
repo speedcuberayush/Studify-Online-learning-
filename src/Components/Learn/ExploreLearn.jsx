@@ -6,6 +6,9 @@ import tutBabbar from "../../Images/tutBabbar.png";
 import tutClever from "../../Images/tutClever.png";
 import tutGfx from "../../Images/tutGfx.png";
 import tutHarry from "../../Images/tutHarry.png";
+
+import Testimonials from "./Part1";
+import Faqs from "./Part2";
 function TrendingCourses() {
   return (
     <>
@@ -22,7 +25,7 @@ function TrendingCourses() {
           backgroundColor: "rgb(30, 30, 35) ",
         }}
       >
-        <h1 style={{ color: "#fff" }}> EXPLORE NOW </h1>
+        <h1 style={{ color: "#fff", fontSize: "40px" }}> EXPLORE NOW </h1>
         <div className="ExploreNow">
           <div className="carousel-wrapper">
             {/* abstract radio buttons for slides */}
@@ -152,27 +155,11 @@ function ExploreLearn() {
           </div>
         </div>
       </div>
-      <div className="testimonialsPart">
-        <h1 style={{ textAlign: "center" }}>TESTIMONIALS</h1>
-        <ul
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <li>TESTIMONIAL PART 1</li>
-          <li>TESTIMONIAL PART 2</li>
-          <li>TESTIMONIAL PART 3</li>
-          <li>TESTIMONIAL PART 4</li>
-          <li>TESTIMONIAL PART 5</li>
-          <li>TESTIMONIAL PART 6</li>
-          <li>TESTIMONIAL PART 7</li>
-          <li>TESTIMONIAL PART 8</li>
-          <li>TESTIMONIAL PART 9</li>
-          <li>TESTIMONIAL PART 10</li>
-        </ul>
+      <div style={{ width: "100%" }}>
+        <Testimonials />
+      </div>
+      <div style={{ width: "100%" }}>
+        <Faqs />
       </div>
     </div>
   );
@@ -229,7 +216,7 @@ function PARTNERSCARDS() {
             <div className="logo-holder logo-6">
               <a href="#">
                 <h3>
-                  OPEN<span>AI</span>
+                  Open<span>AI</span>
                 </h3>
               </a>
             </div>

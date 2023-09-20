@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/Aboutus.css";
 import Contact from "./Contact";
+import Part1 from "./Aboutus/AboutusSlider.jsx";
 
 function Benifits() {
   return (
@@ -70,6 +71,7 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
+            <Part1 />
             {/* <p>
               <span className="first-character sc">S</span>tudify aims to
               address the fragmented nature of learning, content creation, and

@@ -128,7 +128,7 @@ function Navbar() {
         </div>
 
         <div className="BTNpart3">
-          <div className="SignOUTwala">
+          <div className="SignOUTwala" style={{ paddingRight: "20px" }}>
             <NavLink to="/login">
               <button class="Btn">
                 <div class="butnsign">
@@ -141,7 +141,7 @@ function Navbar() {
               </button>
             </NavLink>
           </div>
-
+          {/* 
           <NavLink to="/" style={{ textDecoration: "None" }}>
             <button className="PremBTN" style={{ cursor: "pointer" }}>
               Premium
@@ -149,8 +149,7 @@ function Navbar() {
                 <div class="arrow"></div>
               </div>
             </button>
-          </NavLink>
-
+          </NavLink> */}
         </div>
       </div>
     </>
