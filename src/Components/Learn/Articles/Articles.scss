@@ -1,97 +1,141 @@
-$menuWidth: 14em;
-$menuPaddingLeft: 3em;
-$highlight: #0096ff;
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap");
 
+/* === Grid and base layout === */
 
-.Articles {
-  padding: 2em 2em 2em $menuWidth + $menuPaddingLeft;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+:root {
+  --highlight: #0096ff;
+  --body-pad-top: 70px;
+  margin: 0;
+  padding: 0;
 }
 
-.toc {
-  position: fixed;
-  left: $menuPaddingLeft;
-  top: 5em;
-  padding: 1em;
-  width: $menuWidth;
-  line-height: 2;
-
-  .ArticlesUL {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .ArticlesUL ul {
-    padding-left: 2em;
-  }
-
-  .ArticlesLI a {
-    display: inline-block;
-    color: #aaa;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .ArticlesLI.visible > a {
-    color: #111;
-    transform: translate(5px);
-  }
+.ArticleContent {
+  display: grid;
+  margin: 0;
+  padding: var(--body-pad-top) 45px;
+  min-width: 350px;
+  grid: auto / 200px minmax(300px, 500px);
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  font: 16px/1.3 "PT Sans", sans-serif;
+  color: #333;
+  background: #edf2f4;
 }
 
-.toc-marker {
-  position: absolute;
-  top: 0;
+.ArticleNav {
+  position: sticky;
   left: 0;
+  top: var(--body-pad-top);
+  line-height: 2;
+}
+
+.ArticlePartwala {
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+/* === .ArticleNavbar and marker === */
+
+.ArticleNav ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.ArticleNav li > ul {
+  padding-left: 30px;
+}
+
+.ArticleNav a {
+  display: inline-block;
+  color: #7f7f7f;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.ArticleNav li.visible > a {
+  color: #222;
+  transform: translate(5px);
+}
+
+.ArticleNav .ArticleSVG {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-
-  path {
-    transition: all 0.3s ease;
-    stroke: #0096ff;
-    stroke-width: 4px;
-  }
 }
 
-.contents {
-  padding: 1em;
-  max-width: 800px;
-  font-size: 1.2em;
-  font-family: "Frank Ruhl Libre", sans-serif;
-
-  img {
-    max-width: 100%;
-  }
-
-  .code-block {
-    white-space: pre;
-    overflow: auto;
-    max-width: 100%;
-
-    code {
-      display: block;
-      background-color: #f9f9f9;
-      padding: 10px;
-    }
-  }
-
-  .code-inline {
-    background-color: #f9f9f9;
-    padding: 4px;
-  }
-
-  .ArticlesH2,
-  .ArticlesH3 {
-    padding-top: 1em;
-  }
+.ArticlePATH{
+  transition: all 300ms ease;
+  fill: transparent;
+  stroke: var(--highlight);
+  stroke-width: 3px;
+  stroke-dasharray: 0 0 0 1000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-@media screen and (max-width: 1200px) {
-  .Articles {
-    font-size: 14px;
-  }
+/* === Body contents === */
+
+.ArticleSection[id] {
+  margin: 25px 0;
+  padding: 25px 0;
+}
+
+.ArticleH1,
+.ArticleH2 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
+
+.ArticleH2 {
+  padding-left: 10px;
+  border-left: 8px solid var(--highlight);
+  font-size: 24px;
+}
+
+.ArticleH1 span,
+.subheading {
+  display: block;
+  color: #666;
+  font: 700 20px sans-serif;
+}
+
+.ArticlePartwala a {
+  color: #222;
+  text-decoration-color: var(--highlight);
+}
+
+.ArticlePartwala a:hover {
+  margin: -2px;
+  padding: 2px;
+  border: 0;
+  background: var(--highlight);
+}
+
+code {
+  margin: -2px;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  font-family: "PT Mono", monospace;
+  color: #333;
+}
+
+/* === Adjustments === */
+
+/* Scroll all the way up even if the first .ArticleSection starts a couple hundred pixels down the page */
+.ArticleSection:first-of-type {
+  margin-top: -300px;
+  padding-top: 350px;
+}
+
+.ArticlePartwala,
+.ArticleSection:last-of-type,
+.ArticleSection:last-of-type p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
