@@ -13,6 +13,8 @@ import AssessmentIcon from "@mui/icons-material/Assessment";
 import ExploreLearn from "./Learn/ExploreLearn.jsx";
 import Course from "./Learn/Course";
 import References from "./Learn/References";
+
+import Articles from "./Learn/Articles/Articles";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -25,7 +27,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box >
+        <Box>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -88,7 +90,7 @@ export default function Learn() {
           }}
         >
           {/* Tab components */}
-          <Tab  
+          <Tab
             className="sidebarhumainjatihaikya"
             icon={<AssessmentIcon />}
             label="EXPLORE"
@@ -134,13 +136,13 @@ export default function Learn() {
             <Course />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            Item Three
+            <Articles />
           </TabPanel>
           <TabPanel value={value} index={3}>
             Item Four
           </TabPanel>
           <TabPanel value={value} index={4}>
-            <References/>
+            <References />
           </TabPanel>
         </div>
       </Box>

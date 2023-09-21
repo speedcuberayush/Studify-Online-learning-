@@ -9,6 +9,10 @@ import tutHarry from "../../Images/tutHarry.png";
 
 import Testimonials from "./Part1";
 import Faqs from "./Part2";
+import Part4 from "./Part4";
+import Part5 from "./Part5";
+
+import Footer from "../Footer";
 function TrendingCourses() {
   return (
     <>
@@ -117,6 +121,12 @@ function ExploreLearn() {
       <div style={{ backgroundColor: "rgb(30,30,35)", width: "100%" }}>
         <TrendingCourses />
       </div>
+      <div style={{ height: "100vh" }}>
+        <Part5 />
+      </div>
+      {/* <div style={{ height: "20vh" }}>
+        <Part4 />
+      </div> */}
       <div className="Tareef">
         <h1
           style={{ textAlign: "center", marginTop: "50px", fontSize: "45px" }}
@@ -125,42 +135,14 @@ function ExploreLearn() {
         </h1>
         <PARTNERSCARDS />
       </div>
-      <div
-        className="featuresandbenifits"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center ",
-          alignItems: "center",
-        }}
-      >
-        <h1>FEATURES & BENIFITS</h1>
-        <div
-          className="featuresandbenifitscards"
-          style={{
-            width: "100%",
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-around",
-            alignItems: "center",
-            border: "2px solid #000",
-          }}
-        >
-          <div className="cardwalapart" style={{ border: "2px solid #000" }}>
-            FEATURES
-          </div>
-          <div className="cardwalapart" style={{ border: "2px solid #000" }}>
-            BENIFITS
-          </div>
-        </div>
+
+      <div style={{ width: "100%" }}>
+        <Faqs />
       </div>
       <div style={{ width: "100%" }}>
         <Testimonials />
       </div>
-      <div style={{ width: "100%" }}>
-        <Faqs />
-      </div>
+      <Footer />
     </div>
   );
 }
@@ -224,9 +206,6 @@ function PARTNERSCARDS() {
           <li>
             <div class="logo-holder logo-9">
               <a href="#">
-                <span>
-                  <i class="fas fa-bell"></i>
-                </span>
                 <h3>GFG</h3>
               </a>
             </div>

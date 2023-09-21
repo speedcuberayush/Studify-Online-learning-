@@ -45,7 +45,7 @@ function Part2() {
       ],
     },
     {
-      id: "Can I contact Studify support if I have questions or issues?",
+      id: "5. Can I contact Studify support if I have questions or issues?",
       content: [
         "Absolutely! If you have any questions or encounter issues while using Studify, you can easily reach out to our support team. Visit the 'Contact Us' page on our website to find the necessary contact information and assistance.",
       ],
