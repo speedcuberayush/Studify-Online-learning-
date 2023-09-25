@@ -5,7 +5,7 @@ function AccordionContent({ id, contentText }) {
   return (
     <section className="Part2Accordion" id={id}>
       <h1 className="Part2Title">
-        <a href={`#${id}`}>{id.replace(/-/g, " ")}</a>
+        <a className="AccordianLink" href={`#${id}`}>{id.replace(/-/g, " ")}</a>
       </h1>
       <div className="part2Content">
         <div className="Part2AccordionWrapper">
@@ -53,7 +53,7 @@ function Part2() {
   ];
 
   return (
-    <div className="Part2Accordian">
+    <div className="Part2AccordianBody">
       <main>
         <h1 className="Part2AccordianH1" style={{ textAlign: "center" }}>
           FAQs

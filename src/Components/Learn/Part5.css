@@ -9,6 +9,7 @@
   height: 360px;
   padding: 30px 20px;
   background: #f5f5f5;
+  border-radius: 10px;
   box-shadow: 5px 5px 10px 5px #ccc;
   overflow: hidden;
 }

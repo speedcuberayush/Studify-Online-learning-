@@ -175,6 +175,21 @@ function Article() {
             <code>intersectionObserver</code> version of Hakim's amazing nav
             concept.
           </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam
+            nesciunt delectus. Modi dolorum ullam sunt sit suscipit placeat
+            harum, saepe fugiat a velit eius provident repellendus odit.
+            Mollitia quia repellat asperiores similique at quibusdam debitis
+            earum illum, provident quae blanditiis aspernatur totam adipisci
+            distinctio illo cupiditate, nihil tempore corporis tempora quod
+            voluptas a deleniti incidunt officiis. Ratione fugiat aliquid iure
+            nesciunt illo unde dolor perspiciatis odit porro! Enim, saepe? Ipsum
+            neque possimus quos incidunt! Ea minima magni, suscipit iure
+            cupiditate commodi esse necessitatibus rerum qui eos beatae ex
+            provident distinctio voluptates veniam ipsa non? Eveniet placeat
+            dignissimos numquam saepe!
+          </p>
         </section>
 
         <section className="ArticleSection" id="first">
@@ -430,7 +445,7 @@ function Article() {
           <p>
             In aliquam maximus dui, nec iaculis nunc gravida et. Cras dapibus
             porta est, sed finibus arcu viverra in. Vivamus volutpat placerat
-            urna, non varius sapien tempor sit amet. Cras quis dictum enim.
+            urna, non varius sapien tempxor sit amet. Cras quis dictum enim.
             Vestibulum ac rhoncus diam, non venenatis dolor. Curabitur ut velit
             tincidunt, pulvinar dolor sit amet, tincidunt arcu. Integer at ipsum
             eu ex blandit consectetur.

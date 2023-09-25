@@ -9,7 +9,6 @@ import tutHarry from "../../Images/tutHarry.png";
 
 import Testimonials from "./Part1";
 import Faqs from "./Part2";
-import Part4 from "./Part4";
 import Part5 from "./Part5";
 
 import Footer from "../Footer";

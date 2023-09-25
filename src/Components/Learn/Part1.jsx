@@ -26,7 +26,7 @@ function Part1() {
               alt=""
             />
             <div>
-              <h3 className="TestiHeader3">milton austin</h3>
+              <h3 className="TestiHeader3">ELON MUSK</h3>
               <p className="TestiPara">sales manager, slack</p>
             </div>
             <div className="gradient" />

@@ -1,4 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+/* === Grid and base layout === */
+
+:root {
+  --highlight: #0096ff;
+  --body-pad-top: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.ArticleContent {
+  display: grid;
+  margin: 0;
+  padding: var(--body-pad-top) 45px;
+  min-width: 350px;
+  grid: auto / 200px minmax(300px, 500px);
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  font: 16px/1.3 "Kalam", sans-serif;
+  color: #333;
+  background: #edf2f4;
+}
+
+.ArticleNav {
+  position: sticky;
+  left: 0;
+  top: var(--body-pad-top);
+  line-height: 2;
+}
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap");
 
 /* === Grid and base layout === */
 
@@ -18,7 +49,7 @@
   align-items: start;
   justify-content: center;
   gap: 20px;
-  font: 16px/1.3 "PT Sans", sans-serif;
+  font: 16px/1.3 "Kalam", sans-serif;
   color: #333;
   background: #edf2f4;
 }
@@ -28,6 +59,117 @@
   left: 0;
   top: var(--body-pad-top);
   line-height: 2;
+}
+
+.ArticlePartwala {
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+/* === .ArticleNavbar and marker === */
+
+.ArticleNav ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.ArticleNav li > ul {
+  padding-left: 30px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+.ArticleNav a {
+  display: inline-block;
+  color: #7f7f7f;
+  text-decoration: none;
+  font-family: "Acme", sans-serif;
+  transition: all 300ms ease-in-out;
+}
+
+.ArticleNav li.visible > a {
+  color: #222;
+  transform: translate(5px);
+}
+
+.ArticleNav .ArticleSVG {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ArticlePATH {
+  transition: all 300ms ease;
+  fill: transparent;
+  stroke: var(--highlight);
+  stroke-width: 3px;
+  stroke-dasharray: 0 0 0 1000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* === Body contents === */
+
+.ArticleSection[id] {
+  margin: 25px 0;
+  padding: 25px 0;
+}
+
+.ArticleH1,
+.ArticleH2 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
+
+.ArticleH2 {
+  padding-left: 10px;
+  border-left: 8px solid var(--highlight);
+  font-size: 24px;
+}
+
+.ArticleH1 span,
+.subheading {
+  display: block;
+  color: #666;
+  font: 700 20px sans-serif;
+}
+
+.ArticlePartwala a {
+  color: #222;
+  text-decoration-color: var(--highlight);
+}
+
+.ArticlePartwala a:hover {
+  margin: -2px;
+  padding: 2px;
+  border: 0;
+  background: var(--highlight);
+}
+
+code {
+  margin: -2px;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  font-family: "PT Mono", monospace;
+  color: #333;
+}
+
+/* === Adjustments === */
+
+/* Scroll all the way up even if the first .ArticleSection starts a couple hundred pixels down the page */
+.ArticleSection:first-of-type {
+  margin-top: -300px;
+  padding-top: 350px;
+}
+
+.ArticlePartwala,
+.ArticleSection:last-of-type,
+.ArticleSection:last-of-type p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .ArticlePartwala {
@@ -57,9 +199,10 @@
 .ArticleNav li.visible > a {
   color: #222;
   transform: translate(5px);
+  font-weight: 900;
 }
 
-.ArticleNav .ArticleSVG {
+.ArticleSVG {
   position: absolute;
   left: 0;
   top: 0;
@@ -68,14 +211,14 @@
   z-index: -1;
 }
 
-.ArticlePATH{
-  transition: all 300ms ease;
-  fill: transparent;
-  stroke: var(--highlight);
-  stroke-width: 3px;
-  stroke-dasharray: 0 0 0 1000;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.ArticlePath {
+  transition: all 300ms ease !important;
+  fill: transparent !important;
+  stroke: var(--highlight) !important;
+  stroke-width: 3px !important;
+  stroke-dasharray: 0 0 0 1000 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
 }
 
 /* === Body contents === */
@@ -90,6 +233,7 @@
   margin: 0;
   padding: 0;
   font-size: 36px;
+  font-family: "Acme", sans-serif;
 }
 
 .ArticleH2 {

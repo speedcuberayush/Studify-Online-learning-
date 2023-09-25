@@ -13,11 +13,10 @@ import AssessmentIcon from "@mui/icons-material/Assessment";
 import ExploreLearn from "./Learn/ExploreLearn.jsx";
 import Course from "./Learn/Course";
 import References from "./Learn/References";
-
 import Articles from "./Learn/Articles/Articles";
+import AccordianFaq from "./Learn/Articles/AccordianFaq";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <div
       role="tabpanel"
@@ -49,6 +48,28 @@ function a11yProps(index) {
 }
 
 export default function Learn() {
+  const faqs = [
+    {
+      id: 1,
+      header: "STEP 1",
+      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+    {
+      id: 2,
+      header: "STEP 2",
+      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+    {
+      id: 3,
+      header: "STEP 3",
+      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+    {
+      id: 4,
+      header: "STEP 4",
+      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+    },
+  ];
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -139,7 +160,7 @@ export default function Learn() {
             <Articles />
           </TabPanel>
           <TabPanel value={value} index={3}>
-            Item Four
+            <AccordianFaq title={"CONTENT LIST"} faqs={faqs} />
           </TabPanel>
           <TabPanel value={value} index={4}>
             <References />
