@@ -3,6 +3,8 @@
 
 .authpage {
   background: #f6f5f7;
+
+  transform-style: preserve-3d;
   display: flex;
   justify-content: center;
   align-items: center;

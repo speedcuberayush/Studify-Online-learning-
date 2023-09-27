@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 .exploreLearningpart {
+  transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   align-items: center;

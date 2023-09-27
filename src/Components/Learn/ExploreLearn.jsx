@@ -8,8 +8,6 @@ import tutGfx from "../../Images/tutGfx.png";
 import tutHarry from "../../Images/tutHarry.png";
 
 import Testimonials from "./Part1";
-import Faqs from "./Part2";
-import Part5 from "./Part5";
 
 import Footer from "../Footer";
 function TrendingCourses() {
@@ -120,12 +118,6 @@ function ExploreLearn() {
       <div style={{ backgroundColor: "rgb(30,30,35)", width: "100%" }}>
         <TrendingCourses />
       </div>
-      <div style={{ height: "100vh" }}>
-        <Part5 />
-      </div>
-      {/* <div style={{ height: "20vh" }}>
-        <Part4 />
-      </div> */}
       <div className="Tareef">
         <h1
           style={{ textAlign: "center", marginTop: "50px", fontSize: "45px" }}
@@ -135,9 +127,6 @@ function ExploreLearn() {
         <PARTNERSCARDS />
       </div>
 
-      <div style={{ width: "100%" }}>
-        <Faqs />
-      </div>
       <div style={{ width: "100%" }}>
         <Testimonials />
       </div>

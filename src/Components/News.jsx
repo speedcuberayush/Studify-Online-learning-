@@ -17,7 +17,7 @@ function Feed() {
       <div className="picFEED">mera content</div>
       <div className="FEEDOPTIONS">
         <li>
-          <FavoriteIcon
+          <FavoriteIcon 
             style={{
               color: isActive ? "#0096ff" : "inherit",
               cursor: "pointer",
