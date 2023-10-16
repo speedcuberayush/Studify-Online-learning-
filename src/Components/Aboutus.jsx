@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Aboutus.css";
-import Contact from "./Contact";
+import Contact from "./Aboutus/Contactus";
 import Part1 from "./Aboutus/AboutusSlider.jsx";
 
 function Benifits() {
@@ -227,13 +227,13 @@ function Aboutus() {
               alignItems: "center",
             }}
           >
-            <Contact />
             {/* <h2>Contact us</h2>
             <div className="contactwalaforms">
-              <div className="contactwalapart1">LOCATION</div>
-              <div className="contactwalapart2">CONTACT DETAILS</div>
-            </div> */}
+            <div className="contactwalapart1">LOCATION</div>
+            <div className="contactwalapart2">CONTACT DETAILS</div>
+          </div> */}
           </div>
+          <Contact />
         </section>
       </div>
     </div>

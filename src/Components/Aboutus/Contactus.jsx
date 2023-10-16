@@ -2,17 +2,19 @@ import "./Contact.scss";
 import React, { useState } from "react";
 
 function Contactus() {
-  const buttons = document.querySelectorAll(".contactusCARD-buttons button");
-  const sections = document.querySelectorAll(".contactusCARD-section");
-  const contactusCARD = document.querySelector(".contactusCARD");
+  const buttons = document.querySelectorAll(
+    ".CONTACTcards-buttons .CONTACTbutton"
+  );
+  const sections = document.querySelectorAll(".CONTACTcards-section");
+  const CONTACTcards = document.querySelector(".CONTACTcards");
 
   const handleButtonClick = (e) => {
     const targetSection = e.target.getAttribute("data-section");
     const section = document.querySelector(targetSection);
     targetSection !== "#about"
-      ? contactusCARD.classList.add("is-active")
-      : contactusCARD.classList.remove("is-active");
-    contactusCARD.setAttribute("data-state", targetSection);
+      ? CONTACTcards.classList.add("is-active")
+      : CONTACTcards.classList.remove("is-active");
+    CONTACTcards.setAttribute("data-state", targetSection);
     sections.forEach((s) => s.classList.remove("is-active"));
     buttons.forEach((b) => b.classList.remove("is-active"));
     e.target.classList.add("is-active");
@@ -22,36 +24,35 @@ function Contactus() {
   buttons.forEach((btn) => {
     btn.addEventListener("click", handleButtonClick);
   });
-
   return (
     <div className="ContactusPART">
-      <div className="contactusCARD" data-state="#about">
-        <div className="contactusCARD-header">
+      <div className="CONTACTcards" data-state="#about">
+        <div className="CONTACTcards-header">
           <div
-            className="contactusCARD-cover"
+            className="CONTACTcards-cover"
             style={{
               backgroundImage:
                 'url("https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")',
             }}
           />
           <img
-            className="contactusCARD-avatar"
+            className="CONTACTcards-avatar"
             src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
             alt="avatar"
           />
-          <h1 className="contactusCARD-fullname">William Rocheald</h1>
-          <h2 className="contactusCARD-jobtitle">UI Developer</h2>
+          <h1 className="CONTACTcards-fullname">William Rocheald</h1>
+          <h2 className="CONTACTcards-jobtitle">UI Developer</h2>
         </div>
-        <div className="contactusCARD-main">
-          <div className="contactusCARD-section is-active" id="about">
-            <div className="contactusCARD-content">
-              <div className="contactusCARD-subtitle">ABOUT</div>
-              <p className="contactusCARD-desc">
+        <div className="CONTACTcards-main">
+          <div className="CONTACTcards-section is-active" id="about">
+            <div className="CONTACTcards-content">
+              <div className="CONTACTcards-subtitle">ABOUT</div>
+              <p className="CONTACTcards-desc">
                 Whatever tattooed stumptown art party sriracha gentrify hashtag
                 intelligentsia readymade schlitz brooklyn disrupt.
               </p>
             </div>
-            <div className="contactusCARD-social">
+            <div className="CONTACTcards-social">
               <a href="#">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
@@ -76,50 +77,50 @@ function Contactus() {
               </a>
             </div>
           </div>
-          <div className="contactusCARD-section" id="experience">
-            <div className="contactusCARD-content">
-              <div className="contactusCARD-subtitle">WORK EXPERIENCE</div>
-              <div className="contactusCARD-timeline">
-                <div className="contactusCARD-item" data-year={2014}>
-                  <div className="contactusCARD-item-title">
+          <div className="CONTACTcards-section" id="experience">
+            <div className="CONTACTcards-content">
+              <div className="CONTACTcards-subtitle">WORK EXPERIENCE</div>
+              <div className="CONTACTcards-timeline">
+                <div className="CONTACTcards-item" data-year={2014}>
+                  <div className="CONTACTcards-item-title">
                     Front-end Developer at <span>JotForm</span>
                   </div>
-                  <div className="contactusCARD-item-desc">
+                  <div className="CONTACTcards-item-desc">
                     Disrupt stumptown retro everyday carry unicorn.
                   </div>
                 </div>
-                <div className="contactusCARD-item" data-year={2016}>
-                  <div className="contactusCARD-item-title">
+                <div className="CONTACTcards-item" data-year={2016}>
+                  <div className="CONTACTcards-item-title">
                     UI Developer at <span>GitHub</span>
                   </div>
-                  <div className="contactusCARD-item-desc">
+                  <div className="CONTACTcards-item-desc">
                     Developed new conversion funnels and disrupt.
                   </div>
                 </div>
-                <div className="contactusCARD-item" data-year={2018}>
-                  <div className="contactusCARD-item-title">
+                <div className="CONTACTcards-item" data-year={2018}>
+                  <div className="CONTACTcards-item-title">
                     Illustrator at <span>Google</span>
                   </div>
-                  <div className="contactusCARD-item-desc">
+                  <div className="CONTACTcards-item-desc">
                     Onboarding illustrations for App.
                   </div>
                 </div>
-                <div className="contactusCARD-item" data-year={2020}>
-                  <div className="contactusCARD-item-title">
+                <div className="CONTACTcards-item" data-year={2020}>
+                  <div className="CONTACTcards-item-title">
                     Full-Stack Developer at <span>CodePen</span>
                   </div>
-                  <div className="contactusCARD-item-desc">
+                  <div className="CONTACTcards-item-desc">
                     Responsible for the encomposing brand expreience.
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="contactusCARD-section" id="contact">
-            <div className="contactusCARD-content">
-              <div className="contactusCARD-subtitle">CONTACT</div>
-              <div className="contactusCARD-contact-wrapper">
-                <div className="contactusCARD-contact">
+          <div className="CONTACTcards-section" id="contact">
+            <div className="CONTACTcards-content">
+              <div className="CONTACTcards-subtitle">CONTACT</div>
+              <div className="CONTACTcards-contact-wrapper">
+                <div className="CONTACTcards-contact">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -134,7 +135,7 @@ function Contactus() {
                   </svg>
                   Algonquin Rd, Three Oaks Vintage, MI, 49128
                 </div>
-                <div className="contactusCARD-contact">
+                <div className="CONTACTcards-contact">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -148,7 +149,7 @@ function Contactus() {
                   </svg>
                   (269) 756-9809
                 </div>
-                <div className="contactusCARD-contact">
+                <div className="CONTACTcards-contact">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -163,16 +164,22 @@ function Contactus() {
                   </svg>
                   william@rocheald.com
                 </div>
-                <button className="contact-me">WORK TOGETHER</button>
+                <button className="CONTACTbutton contact-me">
+                  WORK TOGETHER
+                </button>
               </div>
             </div>
           </div>
-          <div className="contactusCARD-buttons">
-            <button data-section="#about" className="is-active">
+          <div className="CONTACTcards-buttons">
+            <button className="CONTACTbutton is-active" data-section="#about">
               ABOUT
             </button>
-            <button data-section="#experience">EXPERIENCE</button>
-            <button data-section="#contact">CONTACT</button>
+            <button className="CONTACTbutton" data-section="#experience">
+              EXPERIENCE
+            </button>
+            <button className="CONTACTbutton" data-section="#contact">
+              CONTACT
+            </button>
           </div>
         </div>
       </div>
