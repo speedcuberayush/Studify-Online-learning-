@@ -1,73 +1,37 @@
 import React from "react";
 import Coursecard from "./Coursecard";
 import "./Courses.css";
-import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-
-function CourseSlider({ Header = "Course Title" }) {
-  return (
-    <div className="CourseSlider">
-      <div className="CourseSliderHeader">
-        <ArrowCircleLeftIcon style={{ color: "#fff" }} />
-        <h2 className="cpHEADING" style={{ marginBottom: "10px" }}>
-          {Header}
-        </h2>
-        <ArrowCircleRightIcon style={{ color: "#fff" }} />
-      </div>
-
-      <div className="CourseSliderContent">
-        <div className="cpCARDS">
-          <Coursecard />
-          <Coursecard />
-          <Coursecard />
-
-          <Coursecard />
-          <Coursecard />
-          <Coursecard />
-
-          <Coursecard />
-          <Coursecard />
-          <Coursecard />
-
-          <Coursecard />
-          <Coursecard />
-          <Coursecard />
-
-          <Coursecard />
-          <Coursecard />
-          <Coursecard />
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function Course() {
   return (
     <div className="Coursepart">
-      <div className="Coursepart1">
-        <CourseSlider Header="TRENDING" />
-      </div>
-      <div className="Coursepart2">
-        <CourseSlider Header="DSA" />
-      </div>
-      <div className="Coursepart3">
-        <CourseSlider Header="DEVELOPMENT" />
-      </div>
-      <div className="Coursepart4">
-        <CourseSlider Header="GATE" />
-      </div>
-      <div className="Coursepart5">
-        <CourseSlider Header="TRENDING" />
-      </div>
-      <div className="Coursepart6">
-        <CourseSlider Header="COLLEGE" />
-      </div>
-      <div className="Coursepart7">
-        <CourseSlider Header="DESIGNING" />
-      </div>
-      <div className="Coursepart8">
-        <CourseSlider Header="COLLEGE" />
+      <div className="CourseSliderContent">
+        <div className="cpCARDS">
+          <Coursecard
+            title="Design & Analysis of Algorithms"
+            description="Master the art of designing and analyzing efficient algorithms to solve complex real-world problems in this comprehensive course"
+          />
+          <Coursecard
+            title="Artificial Intelligence & Machine Learning"
+            description="Explore the frontiers of Artificial Intelligence and Machine Learning to develop intelligent systems and data-driven solutions in this cutting-edge course."
+          />
+          <Coursecard
+            title="Operating Systems"
+            description="Dive into the core principles of Operating Systems to understand how they manage hardware resources and provide a stable platform for software applications in this foundational course."
+          />
+          <Coursecard
+            title="Introduction to Programming"
+            description="Embark on your coding journey with this beginner-friendly course, offering an Introduction to Programming that equips you with the fundamental skills to create and analyze code"
+          />
+          <Coursecard
+            title="Git | Github | Version Control"
+            description="Master the art of version control and collaboration with Git and GitHub in this course, empowering you to streamline software development and teamwork."
+          />
+          <Coursecard
+            title="React JS Development"
+            description="Unlock the power of web development with React JS in this course, where you'll learn to build dynamic and interactive user interfaces for modern applications."
+          />
+        </div>
       </div>
     </div>
   );

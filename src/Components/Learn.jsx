@@ -15,6 +15,9 @@ import Course from "./Learn/Course";
 import References from "./Learn/References";
 import Articles from "./Learn/Articles/Articles";
 import AccordianFaq from "./Learn/Articles/AccordianFaq";
+import ContentGrid from "./Learn/Articles/ContentGrid";
+import CourseVideo from "./Learn/CourseVideo";
+import { ChapterAIML, ChapterDAA, ChapterOS } from "./Learn/Chapters";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
@@ -154,12 +157,19 @@ export default function Learn() {
             <ExploreLearn />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Course />
+            <CourseVideo />
           </TabPanel>
           <TabPanel value={value} index={2}>
+            <ContentGrid />
+            <ChapterAIML />
+            <Articles />
+            <ChapterDAA />
+            <Articles />
+            <ChapterOS />
             <Articles />
           </TabPanel>
           <TabPanel value={value} index={3}>
+            <Course />
             <AccordianFaq title={"CONTENT LIST"} faqs={faqs} />
           </TabPanel>
           <TabPanel value={value} index={4}>

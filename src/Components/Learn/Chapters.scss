@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,700");
+.seperator {
+  margin-bottom: 30px;
+  width: 200px;
+  height: 2px;
+  background: #777;
+  border: none;
+}
+
+.ChapterPart {
+  font-family: "Merriweather", serif;
+  // font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ChapterContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChapterCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 375px;
+  max-width: 80%;
+  padding: 2em 0;
+  background: #fff;
+  box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+  transition: all 0.35s ease;
+}
+
+.ChapterCard::before,
+.ChapterCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0096ff;
+  height: 4px;
+}
+
+.ChapterCard::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: 0.5s;
+}
+
+.ChapterCard::after {
+  width: 100%;
+  background: white;
+  transition: width 0.5s ease;
+}
+
+.ChapterCard .Chaptercontent {
+  width: 18em;
+  width: 500px;
+  max-width: 80%;
+}
+
+.ChapterCard .Chapterlogo {
+  margin: 0 0 1em;
+  width: 10.625em;
+  transition: all 0.35s ease;
+}
+
+.ChapterCard .Chapterh6 {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  // letter-spacing: 2px;
+}
+
+.ChapterCard .hover_Chaptercontent {
+  overflow: hidden;
+  max-height: 0;
+  transform: translateY(1em);
+  transition: all 0.55s ease;
+}
+
+.ChapterCard .hover_Chaptercontent p {
+  margin: 1.5em 0 0;
+  font-size: 12px;
+  color: #6e6e70;
+  line-height: 1.4em;
+}
+
+.ChapterCard:hover {
+  // width: 24em;
+  width: 500px;
+  box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+
+.ChapterCard:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  transition-delay: 0;
+}
+
+.ChapterCard:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: width 0 ease;
+}
+
+.ChapterCard:hover .Chapterlogo {
+  margin-bottom: 0.5em;
+}
+
+.ChapterCard:hover .hover_Chaptercontent {
+  max-height: 10em;
+  transform: none;
+}
+.Chapterunit {
+  display: flex;
+  // width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+}

@@ -1,6 +1,9 @@
 import React from "react";
 import "./check.css";
-
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
+import SlowMotionVideoIcon from "@mui/icons-material/SlowMotionVideo";
+import DescriptionIcon from "@mui/icons-material/Description";
 function TodoItem({ text }) {
   return (
     <label className="todo">
@@ -50,7 +53,35 @@ function TodoItem({ text }) {
         <use xlinkHref="#todo__check" className="todo__check" />
         <use xlinkHref="#todo__circle" className="todo__circle" />
       </svg>
-      <div className="todo__text">{text}</div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: " 300px",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <div className="todo__text">{text}</div>
+        <div className="exploreCheck">
+          <IconButton
+            aria-label="delete"
+            size="large"
+            style={{ color: "white" }}
+            className="iconButtonHover"
+          >
+            <DescriptionIcon fontSize="inherit" />
+          </IconButton>
+          <IconButton
+            aria-label="delete"
+            size="large"
+            style={{ color: "white" }}
+            className="iconButtonHover"
+          >
+            <SlowMotionVideoIcon fontSize="inherit" />
+          </IconButton>
+        </div>
+      </div>
     </label>
   );
 }
@@ -58,6 +89,20 @@ function TodoItem({ text }) {
 function Check({ todoItems }) {
   return (
     <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: " 400px",
+          alignItems: "center",
+          justifyContent: "space-between",
+          color: "#fff",
+        }}
+      >
+        <p className="para1">DONE</p>
+        <p className="para2">TASKS</p>
+        <p className="para3">RESOURCES</p>
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -15,7 +15,7 @@ import Learn from "./Components/Learn.jsx";
 import AI from "./Components/AI.jsx";
 import Explore from "./Components/Explore.jsx";
 import TestPage from "./Components/TestPage.jsx";
-
+import Article from "./Components/Learn/Articles/Articles";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,8 +37,7 @@ function App() {
 function AppContent({ loading }) {
   const location = useLocation(); // Get the current location
 
-  const isNavbarVisible =
-    !["/", "/login", "/home"].includes(location.pathname);
+  const isNavbarVisible = !["/", "/login", "/home"].includes(location.pathname);
 
   return (
     <div className="app">
@@ -58,6 +57,7 @@ function AppContent({ loading }) {
             <Route path={"/learn"} element={<Learn />} />
             <Route path={"/ai"} element={<AI />} />
             <Route path={"/explore"} element={<Explore />} />
+            <Route path={"/article"} element={<Article />} />
             <Route path={"/test"} element={<TestPage />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>

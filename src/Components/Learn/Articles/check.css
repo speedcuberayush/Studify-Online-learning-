@@ -131,3 +131,7 @@
 .todo__state:checked ~ .todo__icon .todo__circle {
   animation-name: explode;
 }
+
+.iconButtonHover:hover {
+  color: #0096ff!important;
+}
