@@ -6,6 +6,7 @@ import Authenticationpage from "./Components/Authenticationpage.jsx";
 import PageTransition from "./Components/PageTransition.jsx";
 import Error404 from "./Components/Error404.jsx";
 import Navbar from "./Components/Navbar.jsx";
+import Quiz from "./Components/Quiz.jsx";
 import ProjectPreloader from "./Components/Projectpreloader.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
 import "./Components/Chat.jsx";
@@ -16,6 +17,12 @@ import AI from "./Components/AI.jsx";
 import Explore from "./Components/Explore.jsx";
 import TestPage from "./Components/TestPage.jsx";
 import Article from "./Components/Learn/Articles/Articles";
+import {
+  ChapterAIML,
+  ChapterDAA,
+  ChapterOS,
+} from "./Components/Learn/Chapters";
+import News from "./Components/News";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -58,7 +65,11 @@ function AppContent({ loading }) {
             <Route path={"/ai"} element={<AI />} />
             <Route path={"/explore"} element={<Explore />} />
             <Route path={"/article"} element={<Article />} />
-            <Route path={"/test"} element={<TestPage />} />
+            <Route path={"/ChapterAIML"} element={<ChapterAIML />} />
+            <Route path={"/ChapterOS"} element={<ChapterOS />} />
+            <Route path={"/ChapterDAA"} element={<ChapterDAA />} />
+            <Route path={"/quiz"} element={<Quiz/>} />
+            {/* <Route path={"/pro"} element={<Quiz/>} /> */}
             <Route path={"*"} element={<Error404 />} />
           </Routes>
         </>

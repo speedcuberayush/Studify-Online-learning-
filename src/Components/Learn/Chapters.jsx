@@ -1,5 +1,7 @@
 import React from "react";
 import "./Chapters.scss";
+import Article from "./Articles/Articles";
+import { Link } from "react-router-dom";
 
 function ChapterCard({ title, smalldesc, desc }) {
   return (
@@ -60,7 +62,19 @@ function ChapterAIML() {
 
   return (
     <div className="ChapterPart">
-      <h1 style={{ textAlign: "center" }}>
+      <Link
+        className="goBackwala"
+        to="/learn"
+        style={{ textDecoration: "none" }}
+      >
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Go Back</span>
+        </button>
+      </Link>
+      <h1 style={{ textAlign: "center", marginTop: "40px" }}>
         Artificial Intelligence & Machine Learning
       </h1>
       <div className="seperator"></div>
@@ -72,11 +86,17 @@ function ChapterAIML() {
         {unit1Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -89,11 +109,17 @@ function ChapterAIML() {
         {unit2Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -106,11 +132,17 @@ function ChapterAIML() {
         {unit3Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -172,7 +204,21 @@ function ChapterOS() {
 
   return (
     <div className="ChapterPart">
-      <h1 style={{ textAlign: "center" }}>Operating Systems</h1>
+      <Link
+        className="goBackwala"
+        to="/learn"
+        style={{ textDecoration: "none" }}
+      >
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Go Back</span>
+        </button>
+      </Link>
+      <h1 style={{ textAlign: "center", marginTop: "40px" }}>
+        Operating Systems
+      </h1>
       <div className="seperator"></div>
 
       {/* Unit I */}
@@ -182,11 +228,17 @@ function ChapterOS() {
         {unit1Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -199,11 +251,17 @@ function ChapterOS() {
         {unit2Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -216,11 +274,17 @@ function ChapterOS() {
         {unit3Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -287,21 +351,41 @@ function ChapterDAA() {
 
   return (
     <div className="ChapterPart">
-      <h1 style={{ textAlign: "center" }}>Design & Analysis of Algorithms</h1>
+      <Link
+        className="goBackwala"
+        to="/learn"
+        style={{ textDecoration: "none" }}
+      >
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Go Back</span>
+        </button>
+      </Link>
+      <h1 style={{ textAlign: "center", marginTop: "40px" }}>
+        Design & Analysis of Algorithms
+      </h1>
       <div className="seperator"></div>
 
       {/* Unit I */}
-      <h3 style={{ textAlign: "center" }}>UNIT - I</h3>
+      <h3 style={{ textAlign: "center", marginTop: "40px" }}>UNIT - I</h3>
       <div className="seperator"></div>
       <div className="Chapterunit ChapterPart1">
         {unit1Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -314,11 +398,17 @@ function ChapterDAA() {
         {unit2Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}
@@ -331,11 +421,17 @@ function ChapterDAA() {
         {unit3Data.map((course, index) => {
           return (
             <div key={index}>
-              <ChapterCard
-                title={course.title}
-                smalldesc={course.smalldesc}
-                desc={course.desc}
-              />
+              <Link
+                className="goBackwala"
+                to="/article"
+                style={{ textDecoration: "none" }}
+              >
+                <ChapterCard
+                  title={course.title}
+                  smalldesc={course.smalldesc}
+                  desc={course.desc}
+                />
+              </Link>
             </div>
           );
         })}

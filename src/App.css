@@ -20,3 +20,14 @@
 .logo-2 {
   color: #fff;
 }
+
+::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #0096ff transparent; /* Set the color of the scrollbar thumb and track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0096ff; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Set the border radius to change the shape */
+}

@@ -40,7 +40,7 @@ function Navbar() {
     },
     {
       text: <DriveFileRenameOutlineIcon />,
-      path: "test",
+      path: "quiz",
       color: "#0096ff",
       ref: useRef(null),
     },

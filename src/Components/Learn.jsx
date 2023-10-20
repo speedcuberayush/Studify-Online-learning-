@@ -161,12 +161,6 @@ export default function Learn() {
           </TabPanel>
           <TabPanel value={value} index={2}>
             <ContentGrid />
-            <ChapterAIML />
-            <Articles />
-            <ChapterDAA />
-            <Articles />
-            <ChapterOS />
-            <Articles />
           </TabPanel>
           <TabPanel value={value} index={3}>
             <Course />

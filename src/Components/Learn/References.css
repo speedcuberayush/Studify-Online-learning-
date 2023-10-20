@@ -24,7 +24,7 @@
 }
 
 .Referencecontent .Referenceheading {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 32px;
 }
 
@@ -58,6 +58,7 @@
 .Referencecontent .Referencebtn:active {
   box-shadow: none;
 }
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap");
 .References {
   display: flex;
   flex-direction: row;
@@ -67,4 +68,7 @@
   padding: 10px;
   align-items: center;
   justify-content: center;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  font-family: "Lilita One", sans-serif;
 }

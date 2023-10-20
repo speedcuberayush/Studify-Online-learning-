@@ -67,7 +67,7 @@ const CourseVideo = () => {
         <CardVideo
           title="DAA-HINDI"
           channelname="Gate Smashers"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Learn algorithm basics, design, and analysis. Explore data structures, graph algorithms, and real-world applications in 15 weeks."
           views="700"
           duration="77"
           likes="2.2"
@@ -76,7 +76,7 @@ const CourseVideo = () => {
         <CardVideo
           title="DAA-ENGLISH"
           channelname="Abdul Bari"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Advanced course in algorithm design. Cover dynamic programming, computational complexity, and tackle complex real-world problems. "
           views="801"
           duration="84"
           likes="5.10"
@@ -88,7 +88,7 @@ const CourseVideo = () => {
         <CardVideo
           title="Artificial Intelligence"
           channelname="Gate Smashers"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Explore the fundamentals of artificial intelligence (AI), including machine learning, neural networks, natural language processing, and robotics."
           views="225"
           duration="24"
           likes="1.10"
@@ -97,7 +97,7 @@ const CourseVideo = () => {
         <CardVideo
           title="Machine Learning"
           channelname="5 Minute Engineering"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Gain foundational knowledge in machine learning. Explore supervised, unsupervised learning, and apply algorithms to real-world datasets. "
           views="890"
           duration="89"
           likes="4.68"
@@ -106,7 +106,7 @@ const CourseVideo = () => {
         <CardVideo
           title="ML using PYTHON"
           channelname="Krish Naik"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Master the fundamentals of Machine Learning using Python. Explore data preprocessing, supervised and unsupervised learning, and apply ML algorithms to real-world datasets. Hands-on coding and projects."
           views="310"
           duration="39"
           likes="68"
@@ -115,7 +115,7 @@ const CourseVideo = () => {
         <CardVideo
           title="Advance Machine Learning"
           channelname="Krish Naik"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Delve into the cutting-edge of machine learning. Explore advanced topics such as deep learning, reinforcement learning, generative models, and practical AI applications. Develop complex models and conduct research-level projects."
           views="900"
           duration="153"
           likes="10.31"
@@ -127,7 +127,7 @@ const CourseVideo = () => {
         <CardVideo
           title="Operating Systems"
           channelname="Gate Smashers"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Learn the fundamentals of operating systems, including process management, memory management, file systems, and system security. Understand key concepts and how they are applied in modern computing environments."
           views="810"
           duration="92"
           likes="9.31"
@@ -136,7 +136,7 @@ const CourseVideo = () => {
         <CardVideo
           title="OS for GATE"
           channelname="Unacademy"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="This course is designed specifically to help you prepare for the Operating Systems section of the GATE exam. Detailed discussions, problem-solving sessions, and practice tests are included to ensure you're well-prepared for GATE."
           views="760"
           duration="62"
           likes="6.78"
@@ -145,7 +145,7 @@ const CourseVideo = () => {
         <CardVideo
           title="OS for Placements"
           channelname="Code Help"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Prepare for job placements with a comprehensive course on operating systems. Cover key topics, including process management, memory management, file systems, and system security. Focus on interview-specific questions, practical problem-solving, and real-world application scenarios."
           views="900"
           duration="153"
           likes="10.31"
@@ -157,7 +157,7 @@ const CourseVideo = () => {
         <CardVideo
           title="Programming-I"
           channelname="Code with Harry"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Start your programming journey with the basics. Learn essential programming concepts, problem-solving, and gain proficiency in a high-level programming language. Practice coding with real-world examples and projects."
           views="2000"
           duration="190"
           likes="89"
@@ -166,7 +166,7 @@ const CourseVideo = () => {
         <CardVideo
           title="Programming-II"
           channelname="Kunal Kushwaha"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Delve into software development practices, design patterns, and advanced programming concepts. Learn how to build complex applications, work on team projects, and enhance your programming expertise. "
           views="900"
           duration="76"
           likes="31"
@@ -175,7 +175,7 @@ const CourseVideo = () => {
         <CardVideo
           title="DSA - I"
           channelname="Code Help"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Dive deeper into data structures and algorithms. Explore advanced topics such as graph algorithms, dynamic programming, and complexity analysis. Solve complex problems and tackle algorithmic challenges. Prerequisites: Completion of the Introduction to Data Structures and Algorithms course or equivalent knowledge."
           views="1450"
           duration="156"
           likes="45"
@@ -184,7 +184,7 @@ const CourseVideo = () => {
         <CardVideo
           title="DSA - II"
           channelname="Take You Forward"
-          desc="a common misconception we hear is that you should wait an hour after eating beofre going swimming as it is unsafe to do otherwise. "
+          desc="Prepare for competitive programming and technical interviews with an emphasis on DSA. Study advanced data structures, advanced algorithms, and problem-solving techniques. Practice with competitive programming problems and real-world challenges. Prerequisites: Strong foundation in DSA or completion of the introductory DSA course."
           views="2234"
           duration="450"
           likes="157"

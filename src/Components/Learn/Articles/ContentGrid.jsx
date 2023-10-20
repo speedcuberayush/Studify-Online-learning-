@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContentGrid.css";
 import { ChapterAIML, ChapterDAA, ChapterOS } from "../Chapters";
+import { Link } from "react-router-dom";
 const planData = [
   {
     iconClass: "ion-ios-world",
@@ -75,11 +76,32 @@ function ContentGrid() {
     <div className="ContentGrid">
       <div className="snip1265">
         {planData.map((plan, index) => (
-          <Plan key={index} {...plan} />
+          <Link
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+            }}  
+            to={getChapterPath(plan.title)} // Pass the path as a string
+            key={index}
+          >
+            <Plan key={index} {...plan} />
+          </Link>
         ))}
       </div>
     </div>
   );
+}
+
+function getChapterPath(title) {
+  // Define the mapping of plan titles to chapter paths
+  const chapterPathMap = {
+    OS: "/ChapterOS", // Define the paths for your chapters
+    AIML: "/ChapterAIML",
+    DAA: "/ChapterDAA",
+    // Add more mappings as needed
+  };
+
+  return chapterPathMap[title] || "/";
 }
 
 export default ContentGrid;

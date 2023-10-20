@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 .Coursepart {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  /* width: 100vw; */
-  min-height: calc(100vh - 100px);
-  /* color: #fff; */
   background-color: #1e1e23;
-  overflow-x: hidden;
-  padding: 5px;
 }
 
 .cpHEADING {
@@ -21,17 +11,11 @@
 }
 
 .cpCARDS {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
-}
-
-.Coursepart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
