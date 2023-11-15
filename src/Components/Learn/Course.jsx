@@ -17,7 +17,7 @@ function Course() {
           />
           <Coursecard
             title="Operating Systems"
-            description="Dive into the core principles of Operating Systems to understand how they manage hardware resources and provide a stable platform for software applications in this foundational course."
+            description="Dive into the principles of OS to understand how they manage hardware resources and provide a stable platform for software applications in this foundational course."
           />
           <Coursecard
             title="Introduction to Programming"

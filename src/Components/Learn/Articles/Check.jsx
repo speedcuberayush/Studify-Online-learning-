@@ -34,7 +34,7 @@ function TodoItem({ text }) {
           <path
             id="todo__line"
             stroke="url(#lineGradient)"
-            d="M21 12.3h168v0.1z"
+            d="M21 12.3h300v0.1z"
           />
           <path
             id="todo__box"
@@ -57,7 +57,7 @@ function TodoItem({ text }) {
         style={{
           display: "flex",
           flexDirection: "row",
-          width: " 300px",
+          width: "100%",
           alignItems: "center",
           justifyContent: "space-between",
         }}

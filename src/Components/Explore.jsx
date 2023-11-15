@@ -6,14 +6,17 @@ import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import NewReleasesIcon from "@mui/icons-material/NewReleases";
+import Intern from "./Explore/Intern";
+import Freelancing from "./Explore/Freelancing";
+import Events from "./Explore/Events";
 
+import News from "./News";
 import "./styles/explore.css";
-import News from "./News.jsx";
 
 function ExploreNavigation({ activeTab, onChange }) {
   return (
     <div className="ExploreNavigation">
-      <Box sx={{ height: "70px", bgcolor: "#000" }}>
+      <Box sx={{ height: "75px", bgcolor: "#000" }}>
         <Tabs
           value={activeTab}
           onChange={onChange}
@@ -76,7 +79,7 @@ function Part1() {
 function Part2() {
   return (
     <>
-      <News />
+      <div className="partone"> H3</div>
     </>
   );
 }
@@ -84,14 +87,14 @@ function Part2() {
 function Part3() {
   return (
     <>
-      <News />
+      <div className="partone"> H3</div>
     </>
   );
 }
 function Part4() {
   return (
     <>
-      <News />
+      <div className="partone"> H4</div>
     </>
   );
 }
@@ -109,9 +112,9 @@ function Explore() {
         <ExploreNavigation activeTab={activeTab} onChange={handleTabChange} />
         <div className="exploreContent">
           {activeTab === 0 && <Part1 />}
-          {activeTab === 1 && <Part2 />}
-          {activeTab === 2 && <Part3 />}
-          {activeTab === 3 && <Part4 />}
+          {activeTab === 1 && <Intern />}
+          {activeTab === 2 && <Freelancing />}
+          {activeTab === 3 && <Events />}
         </div>
       </div>
     </div>

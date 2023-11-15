@@ -65,7 +65,7 @@
 /* Circle for the checkmark */
 .todo__circle {
   stroke: #0096ff;
-  stroke-dasharray: 1 6;
+  stroke-dasharray: 1 ;
   stroke-width: 0;
   transform-origin: 13.5px 12.5px;
   transform: scale(0.4) rotate(0deg);
@@ -102,6 +102,7 @@
 .todo__line {
   stroke-dasharray: 168, 1684;
   stroke-dashoffset: 168;
+  stroke-width: 1;
 }
 
 .todo__circle {

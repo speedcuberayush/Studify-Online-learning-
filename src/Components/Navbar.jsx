@@ -25,16 +25,9 @@ function Navbar() {
       color: "#0096ff",
       ref: useRef(null),
     },
-    { text: <ChatIcon />, path: "chat", color: "#0096ff", ref: useRef(null) },
     {
       text: <SmartToyIcon />,
       path: "ai",
-      color: "#0096ff",
-      ref: useRef(null),
-    },
-    {
-      text: <CodeIcon />,
-      path: "transition",
       color: "#0096ff",
       ref: useRef(null),
     },

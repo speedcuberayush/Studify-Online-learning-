@@ -42,8 +42,9 @@
   background-color: #f3faff;
   box-shadow: 0 0 4px #bbd0e2;
   position: fixed;
-  top: 170px;
+  top: 175px;
   z-index: 99;
+  height: 55px;
   left: 0;
   right: 0;
 }
@@ -105,9 +106,9 @@
   background-color: var(--accent-color-dark);
 }
 
-.NewsAPP  {
+.NewsAPP {
   padding-block: 20px;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .NewsAPP .cards-NewsContainer {
@@ -195,7 +196,7 @@
 .NewsMAIN {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 200px);
   overflow-y: scroll;
   /* margin-top: 10px; */
 }

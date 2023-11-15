@@ -231,7 +231,7 @@ ul li.active a {
   transform-style: preserve-3d;
   transform-origin: left;
   transition: 0.5s;
-  background-color: #fff;
+  background-image: url("../../Images/LandingBG.jpg");
 }
 .parchai.ek {
   z-index: -1;

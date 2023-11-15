@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
 
-/* Override UGG site */
+/* Override UGG site */@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 
 #main {
   width: 100%;
@@ -151,18 +151,18 @@
   z-index: -1; /* Place the overlay behind the content */
 }
 #parallax-world-of-ugg .parallax-two {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px; */
+  /* padding-bottom: 200px; */
   overflow: hidden;
   position: relative;
-  width: 100%;
-  background-image: url("../../Images/StudifyGraph.png");
+  /* width: 100%; */
+  background-image: url("../../Images/STUDIfYfeatures.png");
+  /* background-color: #fff8ec; */
+  /* background-color: #e1bdb8; */
   background-attachment: fixed;
-  background-size: auto;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+  background-size: 65%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 #parallax-world-of-ugg .parallax-three {
   padding-top: 200px;
@@ -170,7 +170,8 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
+  /* background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); */
+  background-image: url("../../Images/ourPartners.png");
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -521,6 +522,6 @@
 }
 .Benifitscontainer .Benifitscard:hover .BenifitsH2 {
   background: #fff;
-  color: #2196f3!important;
+  color: #2196f3 !important;
   box-shadow: 0 0 0 150px #2196f3;
 }

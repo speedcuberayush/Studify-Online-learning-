@@ -25,18 +25,18 @@ import {
 import News from "./Components/News";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
-      setLoading(false);
-    }, 5500); // Adjust the duration as needed
-  }, []);
+  // useEffect(() => {
+  //   // Simulate loading time
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5500); // Adjust the duration as needed
+  // }, []);
 
   return (
     <BrowserRouter>
-      <AppContent loading={loading} />
+      <AppContent />
     </BrowserRouter>
   );
 }
@@ -48,32 +48,32 @@ function AppContent({ loading }) {
 
   return (
     <div className="app">
-      {loading ? (
+      {/* {loading ? (
         <ProjectPreloader /> // Display the preloader while loading
-      ) : (
-        <>
-          {/* Conditionally render Navbar */}
-          {isNavbarVisible && <Navbar />}
-          <Routes>
-            <Route path={"/"} element={<Landingpage />} />
-            <Route path={"/login"} element={<Authenticationpage />} />
-            <Route path={"/aboutus"} element={<Aboutus />} />
-            <Route path={"/transition"} element={<PageTransition />} />
-            <Route path={"/chat"} element={<Chat />} />
-            <Route path={"/home"} element={<Home />} />
-            <Route path={"/learn"} element={<Learn />} />
-            <Route path={"/ai"} element={<AI />} />
-            <Route path={"/explore"} element={<Explore />} />
-            <Route path={"/article"} element={<Article />} />
-            <Route path={"/ChapterAIML"} element={<ChapterAIML />} />
-            <Route path={"/ChapterOS"} element={<ChapterOS />} />
-            <Route path={"/ChapterDAA"} element={<ChapterDAA />} />
-            <Route path={"/quiz"} element={<Quiz/>} />
-            {/* <Route path={"/pro"} element={<Quiz/>} /> */}
-            <Route path={"*"} element={<Error404 />} />
-          </Routes>
-        </>
-      )}
+      ) : ( */}
+      <>
+        {/* Conditionally render Navbar */}
+        {isNavbarVisible && <Navbar />}
+        <Routes>
+          <Route path={"/"} element={<Landingpage />} />
+          <Route path={"/login"} element={<Authenticationpage />} />
+          <Route path={"/aboutus"} element={<Aboutus />} />
+          <Route path={"/transition"} element={<PageTransition />} />
+          <Route path={"/chat"} element={<Chat />} />
+          <Route path={"/home"} element={<Home />} />
+          <Route path={"/learn"} element={<Learn />} />
+          <Route path={"/ai"} element={<AI />} />
+          <Route path={"/explore"} element={<Explore />} />
+          <Route path={"/article"} element={<Article />} />
+          <Route path={"/ChapterAIML"} element={<ChapterAIML />} />
+          <Route path={"/ChapterOS"} element={<ChapterOS />} />
+          <Route path={"/ChapterDAA"} element={<ChapterDAA />} />
+          <Route path={"/quiz"} element={<Quiz />} />
+          {/* <Route path={"/pro"} element={<Quiz/>} /> */}
+          <Route path={"*"} element={<Error404 />} />
+        </Routes>
+      </>
+      {/* )} */}
     </div>
   );
 }
