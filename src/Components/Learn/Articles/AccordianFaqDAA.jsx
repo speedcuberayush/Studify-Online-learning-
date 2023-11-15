@@ -5,81 +5,99 @@ import Check from "./Check";
 import AAbutton from "./AAbutton";
 
 const todoItems1 = [
-  "Introduction to OS",
-  "OS Structure",
-  "Main functions of OS",
-  "Characteristics of OS",
-  "Types of OS",
-  "System Calls",
-  "Type of Syste  Calls",
-  "System Programs",
+  "Designing and analyzing algorithms",
+  "Time and Space complexity",
+  "Average and worst-case Analysis",
+  "Asymptotic notations",
+  "Recurrence equations and their solution",
+  "Substitution method",
+  "Recursion-tree method",
+  "Master method",
 ];
 
 const todoItems2 = [
-  "Process Concept",
-  "Process Control Block(PCB)",
-  "Process Scheduling",
-  "Threads",
-  "CPU scheduling",
-  "Scheduling Criteria",
-  "Scheduling Algorithms",
-  "Interprocess Communication",
-  "Remote Procedure Calls",
-  "Process Synchronization",
+  "Arrays",
+  "Stacks",
+  "Queues",
+  "Pointers",
+  "Linked Lists (One-way)",
+  "Linked Lists (Two-way)",
+  "Linked Lists (Circular Two-way)",
+  "Hashing",
+  "Trees (BST)",
+  "Trees (B Tree)",
+  "Balanced Trees (AVL)",
+  "Balanced Trees (Red-Black Trees)",
+  "Heaps",
+  "Graphs",
 ];
 const todoItems3 = [
-  "Deadlock Characterization",
-  "Conditions for deadlock",
-  "Deadlock Prevention",
-  "Deadlock avoidance-safe state",
-  "Resource Allocation graph",
-  "Banker's Algorithm",
-  "Deadlock Detection",
-  "Recovery from deadlock",
+  "Sorting in linear time",
+  "Counting sort",
+  "Radix sort",
+  "Bucket sort",
 ];
 const todoItems4 = [
-  "Address binding",
-  "logical versus physical address space",
-  "dynamic loading",
-  "contiguous memory allocation",
-  "Fragmentation",
-  "Paging",
-  "Segmentation",
-  "Segmentation with Paging",
-  "Virtual Memory Concept",
-  "Demand Paging",
-  "Page Replacement Algorithms",
+  "The General method",
+  "Binary search",
+  "Finding maximum and minimum of a sequence of numbers",
+  "2-way Merge sort",
+  "Quick sort",
+  "Selection sort",
+  "Strassen’s matrix multiplication",
+  "The General method",
+  "Fractional Knapsack problem",
+  "Prim’s Algorithm",
+  "Kruskal Algorithm",
+  "Huffman coding",
+  "Optimal merge patterns",
 ];
 const todoItems5 = [
-  "Disk Structure",
-  "Disk formatting",
-  "Disk Scheduling Algorithms",
-  "RAID structure-RAID levels",
-  "problems with RAID",
+  "The general method",
+  "0/1 Knapsack",
+  "Subset Sum problem",
+  "Change making problem",
+  "Optimal binary search tree",
+  "Matrix-chain Multiplication",
+  "Longest common Subsequence Problem",
+  "Travelling Salesman Problem",
+  "Comparison of Divide & Conquer and Dynamic Programming techniques",
 ];
 const todoItems6 = [
-  "File Concepts",
-  "Access Methods",
-  "Directory Structure",
-  "Allocation Methods",
-  "Free Space Management",
+  "The general method",
+  "N-Queen’s problem",
+  "Sum-of-subsets",
+  "Hamiltonian cycles",
+  "Branch and Bound method",
+  "0/1 Knapsack problem",
+  "Travelling Salesperson problem",
 ];
 const todoItems7 = [
-  "Goals",
-  "Principles and domain of protection",
-  "Access matrix",
-  "Implementation of access matrix",
-  "Security problem",
-  "Program threats",
-  "System and network threats.",
+  "Representation of Graphs",
+  "Depth First Search",
+  "Breadth First Search",
+  "Topological Sort",
+  "Dijkstra Algorithm",
+  "Bellman Ford Algorithm",
+  "All-Pair Shortest Paths: Floyd Warshall Algorithm",
+  "Minimum Spanning Tree: Kruskal's Algorithm",
 ];
 const todoItems8 = [
-  "Topology",
-  "Connection Strategy",
-  "Network Operating Sytem Types",
-  "PEER-to-PEER",
-  "Client and Server",
-  "Distributed message passing",
+  "Basic Concept",
+  "P and NP-classes",
+  "proof of NP-hard",
+  "NP-hard",
+  "NP-completeness",
+];
+const todoItems9 = [
+  "Euclid Algorithm for GCD of 2 numbers",
+  "modulo arithmetic",
+  "Chinese remainder theorem",
+  "string manipulation/matching algorithms",
+  "Rabin Karp algorithm",
+  "KMP (Knuth-Morris-Pratt) algorithm",
+  "Boyer-Moore algorithm",
+  "Convex Hull",
 ];
 
 const AccordionItem = (props) => {
@@ -105,6 +123,8 @@ const AccordionItem = (props) => {
         return todoItems7;
       case 8:
         return todoItems8;
+      case 9:
+        return todoItems9;
       default:
         return [];
     }
@@ -142,51 +162,57 @@ const AccordianFaq = () => {
   const faqs = [
     {
       id: 1,
-      header: "Introduction to the Operating System",
+      header: "Algorithm and Program Performance",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 1,
     },
     {
       id: 2,
-      header: "Process Management",
+      header: "Review of Data Structures",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 2,
     },
     {
       id: 3,
-      header: "Deadlocks",
+      header: "Sorting Algorithm",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 3,
     },
     {
       id: 4,
-      header: "Memory Management",
+      header: "Divide and Conquer & Greedy Algorithms",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 4,
     },
     {
       id: 5,
-      header: "Device Management",
+      header: "Dynamic Programming",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 5,
     },
     {
       id: 6,
-      header: "File Management",
+      header: "BackTracking& Branch and Bound",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 6,
     },
     {
       id: 7,
-      header: "System Protection and Security",
+      header: "Graph Algorithms",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 7,
     },
     {
       id: 8,
-      header: "Distributed and Network Operating Systems",
+      header: "Computational Complexity",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 8,
+    },
+    {
+      id: 9,
+      header: "Miscellaneous Topics",
+      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+      todoListId: 9,
     },
   ];
 
@@ -204,7 +230,8 @@ const AccordianFaq = () => {
     <div className="AccoridianFaq">
       <article className="AccoridanArti">
         <AAbutton />
-        <h1 className="H1Accord">OPERATING SYSTEMS</h1>
+
+        <h1 className="H1Accord">DESIGN AND ANALYSIS OF ALGORITHMS</h1>
         {faqs.map((faq, index) => {
           return (
             <AccordionItem

@@ -7,7 +7,7 @@ function ProjectPreloader() {
       <div className="box">
         <div className="title">
           <span className="block"></span>
-          <h1 style={{ fontFamily: "Anton" }}>
+          <h1 style={{ fontFamily: "Lilita One" }}>
             STUDIFY
             {/* <h1 className="logo">Stud</h1>ify */}
             <span></span>

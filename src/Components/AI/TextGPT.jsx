@@ -19,7 +19,7 @@ function TextGPT() {
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Bearer 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",
+            "Bearer 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",
           "User-Agent": "Chrome",
         },
         body: JSON.stringify({

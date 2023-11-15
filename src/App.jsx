@@ -17,6 +17,9 @@ import AI from "./Components/AI.jsx";
 import Explore from "./Components/Explore.jsx";
 import TestPage from "./Components/TestPage.jsx";
 import Article from "./Components/Learn/Articles/Articles";
+import AAIML from "./Components/Learn/Articles/AccordianFaqAIML.jsx";
+import ADAA from "./Components/Learn/Articles/AccordianFaqDAA.jsx";
+import AOS from "./Components/Learn/Articles/AccordianFaq.jsx";
 import {
   ChapterAIML,
   ChapterDAA,
@@ -68,6 +71,9 @@ function AppContent({ loading }) {
           <Route path={"/ChapterAIML"} element={<ChapterAIML />} />
           <Route path={"/ChapterOS"} element={<ChapterOS />} />
           <Route path={"/ChapterDAA"} element={<ChapterDAA />} />
+          <Route path={"/roadmap/DAA"} element={<ADAA />} />
+          <Route path={"/roadmap/OS"} element={<AOS />} />
+          <Route path={"/roadmap/AIML"} element={<AAIML />} />
           <Route path={"/quiz"} element={<Quiz />} />
           {/* <Route path={"/pro"} element={<Quiz/>} /> */}
           <Route path={"*"} element={<Error404 />} />

@@ -15,6 +15,8 @@ import Course from "./Learn/Course";
 import References from "./Learn/References";
 import Articles from "./Learn/Articles/Articles";
 import AccordianFaq from "./Learn/Articles/AccordianFaq";
+import AccordianFaqAIML from "./Learn/Articles/AccordianFaqAIML";
+import AccordianFaqDAA from "./Learn/Articles/AccordianFaqDAA";
 import ContentGrid from "./Learn/Articles/ContentGrid";
 import CourseVideo from "./Learn/CourseVideo";
 import { ChapterAIML, ChapterDAA, ChapterOS } from "./Learn/Chapters";
@@ -141,8 +143,7 @@ export default function Learn() {
             <ContentGrid />
           </TabPanel>
           <TabPanel value={value} index={3}>
-            {/* <Course /> */}
-            <AccordianFaq />
+            <Course />
           </TabPanel>
           <TabPanel value={value} index={4}>
             <References />

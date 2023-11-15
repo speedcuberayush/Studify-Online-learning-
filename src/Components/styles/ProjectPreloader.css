@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 .projectPreloader {
   width: 100%;
   height: 100vh;
@@ -33,7 +34,7 @@
   display: flex;
 }
 .projectPreloader .box .title h1 {
-  font-family: "Poppins";
+  font-family: "Concert One";
   color: #fff;
   font-size: 32px;
   -webkit-animation: mainFadeIn 2s forwards;

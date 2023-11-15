@@ -88,13 +88,25 @@ function TodoItem({ text }) {
 
 function Check({ todoItems }) {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        width: "50vw",
+        alignItems: "center",
+        // justifyContent: "space-around",
+        justifyContent: "center",
+        color: "#fff",
+      }}
+    >
       <div
         style={{
           display: "flex",
           flexDirection: "row",
-          width: " 400px",
+          width: "100%",
           alignItems: "center",
+          // justifyContent: "space-around",
+          // justifyContent: "center",
           justifyContent: "space-between",
           color: "#fff",
         }}

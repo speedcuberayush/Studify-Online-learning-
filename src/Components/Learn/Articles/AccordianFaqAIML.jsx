@@ -5,81 +5,67 @@ import Check from "./Check";
 import AAbutton from "./AAbutton";
 
 const todoItems1 = [
-  "Introduction to OS",
-  "OS Structure",
-  "Main functions of OS",
-  "Characteristics of OS",
-  "Types of OS",
-  "System Calls",
-  "Type of Syste  Calls",
-  "System Programs",
+  "Concept of AI",
+  "Histroy of AI",
+  "Current Status and Scope",
+  "Agents and Environments",
+  "Problem Formulation",
+  "Review of Tree and Graph",
+  "Search Graph and Search Tree",
+  "Problem solving using Searching ALgorithms",
+  "UNINFORMED SEARCH: BFS & DFS",
+  "UNINFORMED SEARCH: A* , AO* & NLP",
 ];
 
 const todoItems2 = [
-  "Process Concept",
-  "Process Control Block(PCB)",
-  "Process Scheduling",
-  "Threads",
-  "CPU scheduling",
-  "Scheduling Criteria",
-  "Scheduling Algorithms",
-  "Interprocess Communication",
-  "Remote Procedure Calls",
-  "Process Synchronization",
+  "ML scope",
+  "Limitations and models",
+  "regression, probability & statistics",
+  "Linear Algebra for ML",
+  "Convex Optimization",
+  "Data visualization",
+  "Hypothesis Function & Testing",
+  "Data Distribution, Data Preprocessing",
+  "Data Augumentation",
+  "Normailization",
 ];
 const todoItems3 = [
-  "Deadlock Characterization",
-  "Conditions for deadlock",
-  "Deadlock Prevention",
-  "Deadlock avoidance-safe state",
-  "Resource Allocation graph",
-  "Banker's Algorithm",
-  "Deadlock Detection",
-  "Recovery from deadlock",
+  "Linear Regression",
+  "Multiple Regression",
+  "Bias Variance - Tradeoff",
+  "Model Validation Approaches",
+  "Evaluation of Performance",
+  "Confusion Matrix",
+  "MSE, RMSE, R-squared",
 ];
 const todoItems4 = [
-  "Address binding",
-  "logical versus physical address space",
-  "dynamic loading",
-  "contiguous memory allocation",
-  "Fragmentation",
-  "Paging",
-  "Segmentation",
-  "Segmentation with Paging",
-  "Virtual Memory Concept",
-  "Demand Paging",
-  "Page Replacement Algorithms",
+  "Logistic Regression",
+  "support vector machine",
+  "Navie Basis ALgorithm",
+  "KNN",
+  "Decision Tree",
+  "Decision Tree and Random Forest",
+  "Overfitting and Underfitting",
+  "Noisy data and pruning",
+  "Ensemble Learning",
 ];
 const todoItems5 = [
-  "Disk Structure",
-  "Disk formatting",
-  "Disk Scheduling Algorithms",
-  "RAID structure-RAID levels",
-  "problems with RAID",
+  "Clustering",
+  "Partitioning",
+  "K-mean | K-mediod",
+  "Evaluation of Clustering Algorithms",
+  "Agglomeratice and divisive clustering",
+  "Evaluation of Clustering Algorithm",
+  "Association Rules",
+  "Eigen Values and Vectors",
 ];
 const todoItems6 = [
-  "File Concepts",
-  "Access Methods",
-  "Directory Structure",
-  "Allocation Methods",
-  "Free Space Management",
-];
-const todoItems7 = [
-  "Goals",
-  "Principles and domain of protection",
-  "Access matrix",
-  "Implementation of access matrix",
-  "Security problem",
-  "Program threats",
-  "System and network threats.",
-];
-const todoItems8 = [
-  "Topology",
-  "Connection Strategy",
-  "Network Operating Sytem Types",
-  "PEER-to-PEER",
-  "Client and Server",
-  "Distributed message passing",
+  "Introduction",
+  "Assumptions",
+  "Working and Real World",
+  "Reinforment Learning",
+  "Elements",
+  "Algorithms",
 ];
 
 const AccordionItem = (props) => {
@@ -101,10 +87,7 @@ const AccordionItem = (props) => {
         return todoItems5;
       case 6:
         return todoItems6;
-      case 7:
-        return todoItems7;
-      case 8:
-        return todoItems8;
+
       default:
         return [];
     }
@@ -142,51 +125,39 @@ const AccordianFaq = () => {
   const faqs = [
     {
       id: 1,
-      header: "Introduction to the Operating System",
+      header: "Introduction to AI",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 1,
     },
     {
       id: 2,
-      header: "Process Management",
+      header: "Maching Learning",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 2,
     },
     {
       id: 3,
-      header: "Deadlocks",
+      header: "Supervised Learning - I",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 3,
     },
     {
       id: 4,
-      header: "Memory Management",
+      header: "Supervised Learning - II",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 4,
     },
     {
       id: 5,
-      header: "Device Management",
+      header: "Unsupervised Learning",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 5,
     },
     {
       id: 6,
-      header: "File Management",
+      header: "Semi-Supervised Learning",
       text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
       todoListId: 6,
-    },
-    {
-      id: 7,
-      header: "System Protection and Security",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
-      todoListId: 7,
-    },
-    {
-      id: 8,
-      header: "Distributed and Network Operating Systems",
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
-      todoListId: 8,
     },
   ];
 
@@ -204,7 +175,10 @@ const AccordianFaq = () => {
     <div className="AccoridianFaq">
       <article className="AccoridanArti">
         <AAbutton />
-        <h1 className="H1Accord">OPERATING SYSTEMS</h1>
+
+        <h1 className="H1Accord">
+          ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING
+        </h1>
         {faqs.map((faq, index) => {
           return (
             <AccordionItem

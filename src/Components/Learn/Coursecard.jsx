@@ -1,8 +1,10 @@
 import React from "react";
 import "./Coursecard.css";
+import { Link } from "react-router-dom";
 function Coursecard({
   title = "COURSE TITLE",
   description = "This is a sample description for the course",
+  linked = "DAA",
 }) {
   return (
     <div className="courseCardhubhaime">
@@ -99,9 +101,11 @@ function Coursecard({
                   </div>
                   <div className="solu_description">
                     <p>{description}</p>
-                    <button className="read_more_btn" type="button">
-                      Explore
-                    </button>
+                    <Link to={`/roadmap/${linked}`}>
+                      <button className="read_more_btn" type="button">
+                        Explore
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
